@@ -1,2 +1,5 @@
-#过滤nodejs的模块
+﻿#过滤nodejs的模块
 node_modules/
+
+#过滤package.json
+package.json

@@ -1,0 +1,312 @@
+.box {
+  background-color: #FAFAFA;
+}
+
+#head {
+  background-color: #EBEBEB;
+}
+
+#head ul {
+  float: left;
+}
+
+#head ul li {
+  float: left;
+  height: 30px;
+}
+
+#head ul li a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+
+#head .head_l li {
+  padding-right: 10px;
+}
+
+#head .head_l li a {
+  color: #52AEF6;
+}
+
+#head .head_l li span {
+  color: #666666;
+  display: inline-block;
+  line-height: 30px;
+}
+
+#head .head_r {
+  float: right;
+}
+
+#head .head_r a {
+  color: #333333;
+}
+
+#head .head_r a span {
+  border-right: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+#head .head_r > li:first-child, #head .head_r li:nth-child(2) {
+  position: relative;
+}
+
+#head .head_r > li:first-child ul, #head .head_r li:nth-child(2) ul {
+  display: none;
+  width: 87px;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+
+#head .head_r > li:first-child ul li, #head .head_r li:nth-child(2) ul li {
+  width: 87px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+#head .head_r > li:first-child:hover ul, #head .head_r li:nth-child(2):hover ul {
+  display: block;
+  background-color: #fff;
+}
+
+#head .head_r > li:first-child:hover, #head .head_r li:nth-child(2):hover {
+  background-color: #fff;
+}
+
+#head .head_r > li:first-child:hover a span, #head .head_r li:nth-child(2):hover a span {
+  border-right: #fff;
+}
+
+#head .head_r li:nth-child(2) span {
+  border-right: none;
+}
+
+#head .head_r li:last-child span {
+  border-right: 0 none;
+  padding-right: 0px;
+}
+
+#head i {
+  padding: 0 3px;
+  font-size: 12px;
+}
+
+#search {
+  background-color: #fff;
+}
+
+#search h1 {
+  height: 100px;
+  float: left;
+}
+
+#search .input {
+  height: 100px;
+  float: right;
+  width: 987px;
+}
+
+#search .input input {
+  margin: 36px auto 32px 136px;
+  height: 32px;
+  border: 1px solid #FFC400;
+  border-right: 0 none;
+  width: 350px;
+  float: left;
+  padding-left: 10px;
+}
+
+#search .input a {
+  display: block;
+  background-color: #FFC400;
+  float: left;
+  width: 80px;
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+  color: #000;
+  margin-top: 36px;
+  font-size: 14px;
+}
+
+#nav {
+  background-color: #FFC400;
+}
+
+#nav h2 {
+  font-size: 16px;
+  float: left;
+  width: 190px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: normal;
+}
+
+#nav h2 a {
+  color: #000;
+}
+
+#nav ul {
+  float: left;
+}
+
+#nav ul li {
+  float: left;
+}
+
+#nav ul li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #000;
+  padding: 0 10px;
+}
+
+#nav ul li:hover {
+  background-color: #666;
+}
+
+#nav .nav_r {
+  width: 210px;
+  height: 40px;
+  float: right;
+}
+
+#nav .nav_r a {
+  display: block;
+  text-align: center;
+  line-height: 24px;
+  height: 24px;
+  margin-top: 7px;
+  float: left;
+}
+
+#nav .nav_r a:first-child {
+  width: 122px;
+  color: #333333;
+  background-color: #fff;
+  border-radius: 3px 0 0 3px;
+}
+
+#nav .nav_r a:first-child i {
+  padding: 0 2px;
+}
+
+#nav .nav_r a:last-child {
+  width: 70px;
+  color: #000;
+  background-color: #FFDE00;
+  border-radius: 0 3px 3px 0;
+}
+
+#banner {
+  background-color: #FFDD00;
+}
+
+#banner .container {
+  position: relative;
+}
+
+#banner .banner_l {
+  width: 190px;
+  float: left;
+  background-color: #fff;
+}
+
+#banner .banner_l li a {
+  display: block;
+  height: 32px;
+  padding-left: 33px;
+  line-height: 32px;
+  color: #000;
+}
+
+#banner .banner_l li a i {
+  padding-right: 5px;
+  font-weight: bold;
+}
+
+#banner .carousel {
+  float: left;
+  width: 1010px;
+}
+
+#banner .carousel img {
+  width: 100%;
+  height: 480px;
+}
+
+#banner .banner_r {
+  position: absolute;
+  width: 227px;
+  height: 480px;
+  right: 0px;
+  top: 0px;
+}
+
+#banner .banner_r p {
+  background-color: #fff;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  color: #333;
+}
+
+#banner .banner_r ul {
+  background-color: #FFF9D1;
+  padding: 20px 0 20px 20px;
+}
+
+#banner .banner_r ul li a {
+  color: #000;
+  line-height: 20px;
+}
+
+#banner .banner_r a {
+  display: block;
+}
+
+#main {
+  background-color: #FAFAFA;
+}
+
+#main .today {
+  margin-top: 25px;
+}
+
+#main .today .today_l {
+  background-color: #FF0101;
+  width: 190px;
+  height: 267px;
+  float: left;
+  padding-top: 42px;
+  text-align: center;
+}
+
+#main .today .today_l h4 {
+  font-weight: normal;
+  color: #fff;
+  font-size: 22px;
+}
+
+#main .today .today_l p.iconfont {
+  color: #ff0101;
+  background-color: #fff;
+  width: 120px;
+  margin: 12px auto 0;
+  font-size: 12px;
+  border-radius: 8px;
+  line-height: 22px;
+  height: 22px;
+}
+
+#main .today .today_l p.today_time {
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  text-align: center;
+  margin-top: 30px;
+}
