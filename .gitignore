@@ -3,3 +3,6 @@ node_modules/
 
 #过滤package.json
 package.json
+
+#过滤doc
+doc/
