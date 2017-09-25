@@ -22,5 +22,5 @@ gulp.task('compileSass',function(){
 // 实现监听
 gulp.task('jtSass',function(){
     // 监听第一个参数，如果有修改则启动compileSass任务
-    gulp.watch('./src/sass/home.scss',['compileSass']);
+    gulp.watch('./src/sass/*.scss',['compileSass']);
 });

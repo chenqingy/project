@@ -2,214 +2,28 @@
 .box{
     background-color:$mainColor;
 }
-#head{
-    background-color:$headColor;
-    ul{
-        float:left;
-        li{
-            float:left;
-            height:$headHeight; 
-            a{
-                display:block;
-                height:$headHeight;
-                line-height:$headHeight;
-            }
-        }
-    }
-    .head_l{
-        li{
-            padding-right:10px;
-            a{
-                color:#52AEF6;
-            }
-            span{
-                   color:#666666; 
-                   display:inline-block;
-                   line-height:$headHeight;
-                }
-        }
-    }
-    .head_r{
-        float:right;
-        a{
-            color:#333333;
-            span{
-                border-right:1px solid #ccc;
-                padding:0 10px;
-            }
-        }
-        >li:first-child,li:nth-child(2){
-            position:relative;
-            ul{
-                display:none;
-                width:87px;
-                // background-color:$headColor;
-                position:absolute;
-                top:30px;
-                left:0px;
-                li{
-                    width:87px;
-                    line-height:30px;
-                    padding-left:10px;
-                }
-            }
-            &:hover ul{
-                display:block;
-                background-color:#fff;
-            }
-            &:hover{
-                background-color:#fff;
-            }
-            &:hover a span{border-right:#fff;}
-        }
-        li:nth-child(2){
-            span{
-                border-right:none;
-            }
 
-        }
-        li:last-child{
-            span{
-                border-right:0 none;
-                padding-right:0px;
-            }
-        }
 
-    }
-    i{
-        padding:0 3px;
-        font-size:12px;
-    }
-}
-$inputColor:#FFC400;
-$inputHeight:32px;
-#search{
-    background-color:$searchColor;
-    h1{
-        height:$searchHeight;
-        float:left;
-    }
-    .input{
-        height:$searchHeight;
-        float:right;
-        width:987px;
-        input{
-            margin:36px auto 32px 136px;
-            height:$inputHeight;
-            border:1px solid $inputColor;
-            border-right:0 none;
-            width:350px;
-            float:left;
-            padding-left:10px;
-        }
-        a{
-            display:block;
-            background-color:$inputColor;
-            float:left;
-            width:80px;
-            text-align:center;
-            height:$inputHeight;
-            line-height:$inputHeight;
-            color:#000;
-            margin-top:36px;
-            font-size:14px;
-
-        }
-    }
-}
-
-#nav{
-    background-color:$navColor;
-    
-    h2{
-        font-size:16px;
-        float:left;
-        width:190px;
-        line-height:$navHeight;
-        text-align:center;
-        font-weight:normal;
-        a{
-            color:$mainFontColor;
-        }
-    }
-    ul{
-        float:left;
-        li{
-            float:left;
-            a{
-                display:block;
-                height:$navHeight;
-                line-height:$navHeight;
-                font-size:16px;
-                color:$mainFontColor;
-                padding:0 10px;
-            }
-            &:hover{
-                background-color:#666;
-            }
-        }
-    }
-    .nav_r{
-        width:210px;
-        height:$navHeight;//40
-        float:right;
-        a{
-            display:block;
-            text-align:center;
-            line-height:24px;
-            height:24px;
-            margin-top:7px;
-            float:left;
-        }
-        a:first-child{
-            width:122px;
-            color:#333333;
-            background-color:#fff;
-            border-radius:3px 0 0 3px;
-            i{
-                padding:0 2px;
-            }
-        }
-        a:last-child{
-            width:70px;
-            color:$mainFontColor;
-            background-color:#FFDE00;
-            border-radius:0 3px 3px 0;
-        }
-    }
-}
-
+// 轮播图
+$bannerHeight:480px;
 #banner{
+    position:relative;
     background-color:#FFDD00;
     .container{
-        position:relative;
-    }
-    .banner_l{
-        width:190px;
-        float:left;
-        background-color:#fff;
-        li a{
-            display:block;
-            height:32px;
-            padding-left:33px;
-            line-height:32px;
-            color:$mainFontColor;
-            i{padding-right:5px;font-weight:bold;}
-        }
+        padding-left:190px;
     }
     .carousel{
         float:left;
-        width:1010px;
         img{
             width:100%;
             height:$bannerHeight;
         }
     }
     .banner_r{
-        position:absolute;
+        // position:absolute;
+        float:left;
         width:227px;
         height:$bannerHeight;
-        right:0px;
         top:0px;
         p{
             background-color:#fff;
@@ -265,6 +79,82 @@ $martop:25px;
                 color:#000;
                 text-align:center;
                 margin-top:30px;
+            }
+            $timeFontSize:16px;
+            $timeHeight:38px;
+            h5{
+                font-size:$timeFontSize;
+                span{
+                    display:inline-block;
+                    text-align:center;
+                    width:$timeHeight;
+                    height:$timeHeight;
+                    line-height:$timeHeight;
+                    background-color:#000;
+                    color:#fff;
+                    border-radius:5px;
+                    font-size:$timeFontSize;
+                }
+            }
+
+        }
+        .today_r{
+            float:left;
+            ul{
+                li{
+                    a{
+                        display:block;
+                    }
+                    float:left;
+                    width:202px;
+                    border-right:1px solid #ccc;
+                    p.title{
+                        padding-left:22px;
+                        font-size:14px;
+                        line-height:16px;
+                        margin-top:18px;
+                        font-weight:bold;
+                    }
+                    >span{
+                        display:block;
+                        text-align:center;
+                        line-height:24px;
+                        color:#737373;
+                    }
+                    p.price{
+                        margin-top:10px;
+                        padding-left:9px;
+                        $height:30px;
+                        span{
+                            display:block;
+                            width:117px;
+                            background-color:#f00;
+                            color:#fff;
+                            font-size:16px;
+                            font-weight:bold;
+                            height:$height;
+                            line-height:$height;
+                            float:left;
+                            padding-left:7px;
+                            del{
+                                font-size:12px;
+                                padding-left:20px;
+                            }
+                        }
+                        a{
+                            @extend span;
+                            width:67px;
+                            background-color:#fff;
+                            color:#f00;
+                            font-weight:normal;
+                            font-size:14px;
+                            border:1px solid #f00;
+
+                        }
+                    }
+
+                }
+
             }
         }
     }

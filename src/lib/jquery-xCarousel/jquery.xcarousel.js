@@ -12,13 +12,13 @@
 			autoPlay:true,
 
 			// 显示小图
-			showSmall:true,
+			showSmall:false,
 
 			// 显示左右按钮
 			showButton:true,
 
 			// 是否显示页码
-			showPage:false,
+			showPage:true,
 
 			// 播放间隔
 			duration:3000,
