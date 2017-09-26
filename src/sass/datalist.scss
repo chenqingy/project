@@ -348,6 +348,7 @@ p.price{
                     margin-top:8px;
                     border:1px solid #ccc;
                     padding-bottom:12px;
+                    position:relative;                   
                     >ul{
                         background-color:#F3F3F3;
                         display:flex;
@@ -365,11 +366,21 @@ p.price{
                         li:last-child{
                             border-right:none;
                         }
+                        li.active{
+                            background-color:#fff;
+                        }
                     }
                     .datalist-left{
+                        position:relative;
+                        height:330px;
                         ul{
+                            position:absolute;
                             li{
                                 float:left;
+                                img{
+                                    width:191px;
+                                    height:209px;
+                                }
                                 h4,p{
                                     line-height:20px;
                                     padding-left:21px;

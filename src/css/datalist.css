@@ -421,6 +421,7 @@ p.price, #main .container .main_content .main_r .arrage .datalist-left ul li p.p
   margin-top: 8px;
   border: 1px solid #ccc;
   padding-bottom: 12px;
+  position: relative;
 }
 
 #main .container .main_content .main_r .arrage > ul {
@@ -444,8 +445,26 @@ p.price, #main .container .main_content .main_r .arrage .datalist-left ul li p.p
   border-right: none;
 }
 
+#main .container .main_content .main_r .arrage > ul li.active {
+  background-color: #fff;
+}
+
+#main .container .main_content .main_r .arrage .datalist-left {
+  position: relative;
+  height: 330px;
+}
+
+#main .container .main_content .main_r .arrage .datalist-left ul {
+  position: absolute;
+}
+
 #main .container .main_content .main_r .arrage .datalist-left ul li {
   float: left;
+}
+
+#main .container .main_content .main_r .arrage .datalist-left ul li img {
+  width: 191px;
+  height: 209px;
 }
 
 #main .container .main_content .main_r .arrage .datalist-left ul li h4, #main .container .main_content .main_r .arrage .datalist-left ul li p {

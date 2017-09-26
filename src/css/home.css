@@ -197,6 +197,10 @@
   background-color: #FAFAFA;
 }
 
+#main .container {
+  padding-bottom: 25px;
+}
+
 #main .today {
   margin-top: 25px;
 }
@@ -265,6 +269,11 @@
   display: block;
 }
 
+#main .today .today_r ul li img {
+  width: 201px;
+  height: 166px;
+}
+
 #main .today .today_r ul li p.title {
   padding-left: 22px;
   font-size: 14px;
@@ -316,6 +325,14 @@
   margin-top: 25px;
 }
 
+#main .product_class a:hover img {
+  transform: scale(1.1);
+}
+
+#main .product_class a img {
+  transition: all 0.5s;
+}
+
 #main .product_class .product_head {
   border-bottom: 2px solid #666666;
 }
@@ -340,6 +357,50 @@
 #main .product_class .product_head ul li a {
   padding: 0 12px;
   color: #333;
+}
+
+#main .product_class a {
+  display: block;
+}
+
+#main .product_class .content1 {
+  float: left;
+}
+
+#main .product_class .content1 > div {
+  float: left;
+  width: 600px;
+}
+
+#main .product_class .content1 .left div {
+  float: left;
+}
+
+#main .product_class .content1 .right li {
+  width: 200px;
+  float: left;
+}
+
+#main .product_class .content1 .right li p {
+  text-align: center;
+  line-height: 26px;
+}
+
+#main .product_class .content1 .right li p.title {
+  color: #000;
+}
+
+#main .product_class .content1 .right li p.price {
+  font-weight: bold;
+  color: #E30303;
+}
+
+#main .product_class .foot_logo li {
+  float: left;
+}
+
+#main .product_class .foot_logo li img {
+  width: 150px;
 }
 
 #foot .container dl {

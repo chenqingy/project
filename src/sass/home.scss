@@ -171,7 +171,11 @@ $bannerHeight:480px;
 }
 $martop:25px;
 #main{
+    
     background-color:$mainColor;
+    .container{
+        padding-bottom:25px;
+    }
     .today{
         margin-top:$martop;
         .today_l{
@@ -231,6 +235,10 @@ $martop:25px;
                     float:left;
                     width:202px;
                     border-right:1px solid #ccc;
+                    img{
+                        width:201px;
+                        height:166px;
+                    }
                     p.title{
                         padding-left:22px;
                         font-size:14px;
@@ -283,12 +291,15 @@ $martop:25px;
     }
     .product_class{
         margin-top:$martop;
+        a:hover img{
+            transform:scale(1.1);
+        }
+        a img{transition:all 0.5s;}
         .product_head{
             border-bottom:2px solid #666666;
             h3,a{
                 line-height:44px;
                 display:block;
-
             }
             h3{
                 float:left;
@@ -303,7 +314,37 @@ $martop:25px;
                     }
                 }
             }
-        }            
+        } 
+        a{display:block;}
+        .content1{
+            float:left;
+            >div{float:left;width:600px;}
+            .left{                
+                div{
+                    float:left;                    
+                }
+            }
+            .right{
+                li{
+                    width:200px;
+                    float:left;
+                    p{text-align:center;line-height:26px;}
+                    p.title{color:#000;}
+                    p.price{
+                        font-weight:bold;
+                        color:#E30303;
+                    }
+                }
+            }
+        } 
+        .foot_logo{
+            li{
+                float:left;
+                img{
+                    width:150px;
+                }
+            }
+        }          
     }
 }
 
