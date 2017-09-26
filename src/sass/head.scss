@@ -102,129 +102,75 @@ $headHeight:30px !default;
         font-size:12px;
     }
 }
-// 搜索区
-$searchColor:#fff !default;
-$searchHeight:100px !default;
-$inputColor:#FFC400;
-$inputHeight:32px;
-#search{
-    background-color:$searchColor;
-    h1{
-        height:$searchHeight;
-        float:left;
-    }
-    .input{
-        height:$searchHeight;
-        float:right;
-        width:987px;
-        input{
-            margin:36px auto 32px 136px;
-            height:$inputHeight;
-            border:1px solid $inputColor;
-            border-right:0 none;
-            width:350px;
-            float:left;
-            padding-left:10px;
-        }
-        a{
-            display:block;
-            background-color:$inputColor;
-            float:left;
-            width:80px;
-            text-align:center;
-            height:$inputHeight;
-            line-height:$inputHeight;
-            color:#000;
-            margin-top:36px;
-            font-size:14px;
 
-        }
-    }
-}
-
-// 导航条
-$navColor:#FFC400;
-$navHeight:40px;
-#nav{
-    background-color:$navColor;
-    
-    h2{
-        position:relative;
-        font-size:16px;
-        float:left;
-        width:190px;
-        line-height:$navHeight;
-        text-align:center;
-        font-weight:normal;
-        a{
-            color:$mainFontColor;
-        }
-        .banner_l{
-            width:190px;
-            float:left;
-            background-color:#F6F6F6;
-            position:absolute;
-            top:$navHeight;
-            left:0px;
-            z-index:999;
-            li {
-                a{
-                    font-size:14px;
-                    display:block;
-                    height:32px;
-                    line-height:32px;
-                    color:$mainFontColor;
-                    i{padding-right:5px;font-weight:bold;}
-                }
-                &:hover a{
-                    background-color:#fff;
-                }
-            }
-        }
-    }
-    .container >ul{
-        float:left;
+#foot{
+    background-color:#fff;
+    .container>ul{
+        display:flex;
+        border:1px solid #ccc;
+        border-radius:1px ;
         li{
+            flex:1;
             float:left;
-            a{
-                display:block;
-                height:$navHeight;
-                line-height:$navHeight;
-                font-size:16px;
-                color:$mainFontColor;
-                padding:0 10px;
+            text-align:center;
+            font-size:20px;
+            line-height:46px;   
+            color:#C7012C;
+            span{
+                font-size:18px;
+                color:#666666;
+                padding-left:10px;
+            }                        
+        }
+    }
+    .container dl{
+        float:left;
+        margin-top:20px;
+        border-right:1px solid #ccc;
+        width:179px;
+        padding-left:15px;
+        height:150px;
+        dt{
+            font-size:14px;
+            line-height:20px;           
+        }
+        dd a{
+            line-height:16px;
+            color:#999999;
+        }
+    }
+    .container dl:first-of-type{
+        padding-left:34px;
+        width:301px;
+        color:#999999;
+        line-height:26px;
+        font-size:14px;
+        padding-top:20px;
+        span{
+            color:#333333;
+            font-size:16px;
+        }
+        dd:last-of-type{
+            padding-left:66px;
+            position:relative;
+            height:73px;
+            i{
+                position:absolute;
+                background:url("../img/fw.fw.png") 0 -80px;
+                width:66px;
+                height:73px;
+                top:0px;
+                left:0px;
             }
-            &:hover{
-                background-color:#666;
+            span{
+                color:#FF6600;
+                font-size:12px;
             }
         }
     }
-    .nav_r{
-        width:210px;
-        height:$navHeight;//40
-        float:right;
-        a{
-            display:block;
-            text-align:center;
-            line-height:24px;
-            height:24px;
-            margin-top:7px;
-            float:left;
-        }
-        a:first-child{
-            width:122px;
-            color:#333333;
-            background-color:#fff;
-            border-radius:3px 0 0 3px;
-            i{
-                padding:0 2px;
-            }
-        }
-        a:last-child{
-            width:70px;
-            color:$mainFontColor;
-            background-color:#FFDE00;
-            border-radius:0 3px 3px 0;
-        }
+    .container dl:last-child{
+        border-right:0 none;
+
     }
 }
+

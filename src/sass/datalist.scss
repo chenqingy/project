@@ -1,0 +1,441 @@
+@import 'var';
+.box{
+    background-color:$mainColor;
+}
+$inputColor:#C7012C;
+// 搜索区
+#search{
+    background-color:$searchColor;
+    h1{
+        height:$searchHeight;
+        float:left;
+        a{
+            display:block;
+        }
+    }
+    .input{
+        height:$searchHeight;
+        float:right;
+        width:987px;
+        .border{
+            border:3px solid #ccc;
+            margin:36px 415px 32px 136px;
+            input{
+                height:$inputHeight;
+                border:1px solid $inputColor;
+                border-right:0 none;
+                width:350px;
+                float:left;
+                padding-left:10px;
+            }
+            a{
+                display:block;
+                background-color:$inputColor;
+                float:left;
+                width:80px;
+                text-align:center;
+                height:$inputHeight;
+                line-height:$inputHeight;
+                color:#fff;
+                font-size:16px;
+
+            }
+        }
+        
+    }
+}
+// 导航条
+$navHeight:40px;
+#nav{
+    background-color:#fff;
+    .container{background-color:$inputColor;border-radius:5px 0px ;}
+    h2{
+        $padLeft:22px;
+        position:relative;
+        font-size:16px;
+        float:left;
+        width:230px;
+        line-height:$navHeight;
+        padding-left:$padLeft;
+        font-weight:normal;
+        font-size:16px;
+        color:#fff;
+        a{
+            color:$mainFontColor;
+        }
+        >i{
+            display:block;
+            width:17px;
+            height:17px;
+            position:absolute;
+            top:12px;
+            right:15px;
+            background:url('../img/fw.fw.png') 0 -25px;
+            border-radius:50%;
+        }
+        .banner_l{
+            display:none;
+            width:230px;
+            float:left;
+            background-color:lighten($inputColor,percentage(0.5));
+            position:absolute;
+            top:$navHeight;
+            left:0px;
+            z-index:999;
+            border:1px solid $inputColor;
+            li{
+                &:hover{border:2px solid $inputColor;border-right:none;background-color:#fff;margin:-2px;}
+                a{
+                    padding-left:$padLeft;
+                    font-size:16px;
+                    display:block;
+                    height:32px;
+                    line-height:32px;
+                    color:$mainFontColor;
+                    i{padding-right:5px;font-weight:bold;}
+                }
+                &:hover a{
+                    background-color:#fff;
+                }
+            }
+        }
+        &:hover .banner_l{
+            display:block;
+        }
+    }
+    .container >ul{
+        float:left;
+        li{
+            float:left;
+            a{
+                display:block;
+                height:$navHeight;
+                line-height:$navHeight;
+                font-size:16px;
+                color:#fff;
+                span{padding:0 20px;border-right:1px solid #ccc;display:inline-block;line-height:16px;}
+            }
+            &:hover a{
+                color:#FFC400;
+
+            }
+        }
+        li:last-child a span{
+            border-right:none;
+        }
+    }
+    .nav_r{
+        width:210px;
+        height:$navHeight;//40
+        float:right;
+        a{
+            display:block;
+            text-align:center;
+            line-height:24px;
+            height:24px;
+            margin-top:7px;
+            float:left;
+            position:relative;
+        }
+        a:first-child{
+            width:122px;
+            color:#333333;
+            background-color:#fff;
+            border-radius:3px 0 0 3px;
+            i.iconfont{
+                padding:0 2px;
+            }
+            i.xia{
+                display:block;
+                width:8px;
+                height:4px;
+                position:absolute;
+                top:10px;
+                right:10px;
+                background:url("../img/fw.fw.png");
+            }
+        }
+        a:last-child{
+            width:70px;
+            color:$mainFontColor;
+            background-color:#FCBE11;
+            border-radius:0 3px 3px 0;
+            i{
+                display:block;
+                width:5px;
+                height:8px;
+                position:absolute;
+                top:8px;
+                right:7px;
+                background:url("../img/fw.fw.png") 0px -9px;
+            }
+        }
+    }
+}
+// 数据区域
+p.price{
+    font-weight:bold;
+    color:#C7012C;
+    font-size:14px;
+    padding-left:21px;
+}
+#main{
+    $fontColor:#666666;
+    background-color:#fff;
+    .container{
+        .main_t{
+            line-height:40px;
+            border-bottom:1px solid #ccc;
+            padding-left:10px;
+            a{
+                color:$fontColor;
+                &:hover{color:blue;text-decoration:underline;}
+            }
+        }
+        .main_content{
+            padding-top:10px;
+            .main_l{
+                float:left;
+                width:230px;
+                >div{
+                    padding:5px;
+                    background-color:$mainColor;
+                }
+                .main_lt{
+                    >ul{
+                        border-radius:3px;
+                        background-color:#fff;
+                        >li{
+                            $height:48px;
+                            position:relative;
+                            overflow:hidden;
+                            a.btnjia{
+                                display:block;
+                                line-height:$height;
+                                height:$height;
+                                font-size:16px;
+                                color:$fontColor;
+                                padding-left:10px;
+                                span{
+                                    position:absolute;
+                                    top:20px;
+                                    right:20px;
+                                }
+                            }
+                            a.color{
+                                color:red;
+                            }                        
+                            >ul{
+                                height:0px;
+                                padding-left:10px;
+                                overflow:hidden;
+                                li{
+                                    float:left;
+                                    width:88px;
+                                    line-height:24px;
+                                    padding-left:13px;
+                                    a{color:$fontColor;}
+                                    a::before{
+                                        content:'·';
+                                        font-weight:bold;
+                                    }
+                                    &:hover a{
+                                        background-color:#f00;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .data{
+                    margin-top:6px;
+                    >div{
+                        border-radius:5px;
+                        background-color:#fff;
+                    } 
+                    div>p{
+                        line-height:48px;
+                        height:48px;
+                        padding-left:11px;
+                        font-size:16px;
+                        color:#C7120C;
+                        border-bottom:2px solid #C7120C;
+                    }
+                    .datalist-left{
+                        ul{
+                            margin-top:13px;
+                            li{
+                                padding-left:16px;
+                                height:94px;
+                                img{border:1px solid #ccc;width:77px;height:77px;float:left;}
+                                p.price,h4{
+                                    float:left;
+                                    width:127px;
+                                    padding-left:7px;
+                                    line-height:20px;
+                                }
+                                h4{
+                                    font-weight:normal;
+                                    color:$fontColor;                                   
+                                    padding-top:6px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .attention{                   
+                   
+                }
+                .newcomment{
+                    background-color:#fff;
+                    margin-top:6px;
+                    padding:0px;
+                    
+                    border-top:2px solid #C7012C;
+                    >p{
+                        padding-left:10px;
+                        line-height:36px;
+                        font-size:16px;
+                        color:#C7012C;
+                        background-color:#F5F5F5;
+                    }
+                    .comment{
+                        ul{
+                            padding:0 10px;
+                            li{
+                                height:82px;
+                                border-bottom:1px dotted #000;
+                                padding:8px 0px 0 5px;
+                                p:first-child{
+                                    line-height:16px;
+                                    color:blue;
+                                }
+                                p:last-child{
+                                    line-height:20px;
+                                    color:$fontColor;
+                                }
+                            }
+                            li:last-child{
+                                border-bottom:none;
+                            }
+                        }
+                            
+                    }
+                }                   
+            }
+            .main_r{
+               float:left;
+               width:970px;
+               padding-left:10px;
+               .advertising .mainAd{
+                    float:left;
+                    margin-right:10px;
+                }
+               .advertising .datalist-left{
+                    float:left;
+                    border:1px solid #ccc;
+                    width:230px;
+                    height:242px;
+                    p{
+                        line-height:36px;
+                        color:#C7012C;
+                        font-size:16px;
+                        padding-left:10px;
+                        background-color:#F5F5F5;
+                    }
+               }
+               .arrage{
+                    margin-top:8px;
+                    border:1px solid #ccc;
+                    padding-bottom:12px;
+                    >ul{
+                        background-color:#F3F3F3;
+                        display:flex;
+                        border-top:1px solid $inputColor;
+                        li{
+                            flex:1;
+                            float:left;
+                            text-align:center;
+                            font-size:16px;
+                            color:$fontColor;
+                            line-height:36px;                           
+                            border-right:1px solid #ccc;
+                            border-bottom:1px solid #ccc;
+                        }
+                        li:last-child{
+                            border-right:none;
+                        }
+                    }
+                    .datalist-left{
+                        ul{
+                            li{
+                                float:left;
+                                h4,p{
+                                    line-height:20px;
+                                    padding-left:21px;
+                                }
+                                h4{
+                                    color:$fontColor;
+                                }
+                                p{
+                                    color:#FF9900;
+                                }
+                                p.price{
+                                    @extend p.price;
+                                    margin-top:38px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .product{
+                    margin-top:8px;
+                    .product_class{
+                        >ul{
+                            padding-right:10px;
+                            border-top:2px solid #ccc;
+                            border-bottom:2px solid #ccc;
+                            li:first-child{
+                                float:left;
+                                font-size:16px;
+                                font-weight:bold;
+                                color:$inputColor;
+                                line-height:36px; 
+                                padding:0 10px;
+                                border-top:2px solid $inputColor;
+                                width:92px;
+                                margin-top:-2px;
+                            } 
+                            li:last-child{
+                                float:right;
+                                
+                                a{
+                                    position:relative;
+                                    color:$fontColor;
+                                    line-height:36px;
+                                    display:block;
+                                    padding:0 22px;
+                                    i{
+                                        display:block;
+                                        width:17px;
+                                        height:16px;
+                                        position:absolute;
+                                        top:10px;
+                                        right:4px;
+                                        background:url("../img/fw.fw.png") 0 -50px;
+                                    }
+                                }
+
+                            }                       
+                        }
+                        .datalist2{
+                            height:360px;
+                        }
+                        
+                    }
+                    div:first-child ul li:first-child{width:56px;}
+                }
+            }
+        }
+    }
+}
