@@ -1,0 +1,212 @@
+@import 'var';
+.box{
+    background-color:$mainColor;
+}
+$inputColor:#C7012C;
+$fontColor:#666;
+// 搜索区
+#search{
+    background-color:$searchColor;
+    h1{
+        height:$searchHeight;
+        float:left;
+        a{
+            display:block;
+        }
+    }
+    .input{
+        height:$searchHeight;
+        float:right;
+        width:987px;
+        .border{
+            border:3px solid #ccc;
+            margin:36px 415px 32px 136px;
+            input{
+                height:$inputHeight;
+                border:1px solid $inputColor;
+                border-right:0 none;
+                width:350px;
+                float:left;
+                padding-left:10px;
+            }
+            a{
+                display:block;
+                background-color:$inputColor;
+                float:left;
+                width:80px;
+                text-align:center;
+                height:$inputHeight;
+                line-height:$inputHeight;
+                color:#fff;
+                font-size:16px;
+
+            }
+        }
+        
+    }
+}
+// 导航条
+$navHeight:40px;
+#nav{
+    background-color:#fff;
+    .container{background-color:$inputColor;border-radius:5px 0px ;}
+    h2{
+        $padLeft:22px;
+        position:relative;
+        font-size:16px;
+        float:left;
+        width:230px;
+        line-height:$navHeight;
+        padding-left:$padLeft;
+        font-weight:normal;
+        font-size:16px;
+        color:#fff;
+        a{
+            color:$mainFontColor;
+        }
+        >i{
+            display:block;
+            width:17px;
+            height:17px;
+            position:absolute;
+            top:12px;
+            right:15px;
+            background:url('../img/fw.fw.png') 0 -25px;
+            border-radius:50%;
+        }
+        .banner_l{
+            display:none;
+            width:230px;
+            float:left;
+            background-color:lighten($inputColor,percentage(0.5));
+            position:absolute;
+            top:$navHeight;
+            left:0px;
+            z-index:999;
+            border:1px solid $inputColor;
+            >li{
+                position:relative;
+                &:hover{
+                    border:2px solid $inputColor;
+                    border-right:none;
+                    background-color:#fff;
+                    margin:-2px;
+                    ul{
+                        display:block;
+                    }
+                }
+                // 三级导航
+                ul{
+                    display:none;
+                    width:475px;
+                    position:absolute;
+                    top:-2px;
+                    left:228px;
+                    z-index:99;
+                    background-color:#fff;
+                    border:2px solid $inputColor;
+                    li{
+                        float:left;
+                        padding:15px;
+                        line-height:16px;
+                        font-size:12px;
+                        a{color:$fontColor;}
+                        a::before{
+                            content:'·';
+                            font-weight:bold;
+                        }
+                        &:hover a{
+                            background-color:#f00;
+                        }
+                    }                    
+                }
+                >a{
+                    padding-left:$padLeft;
+                    font-size:16px;
+                    display:block;
+                    height:32px;
+                    line-height:32px;
+                    color:$mainFontColor;
+                    i{padding-right:5px;font-weight:bold;}
+                }
+                &:hover>a{
+                    background-color:#fff;
+                }
+            }
+            /* li:nth-child(1),li:nth-child(2),li:nth-child(3){
+                
+            } */
+        }
+        &:hover .banner_l{
+            display:block;
+        }
+    }
+    .container >ul{
+        float:left;
+        li{
+            float:left;
+            a{
+                display:block;
+                height:$navHeight;
+                line-height:$navHeight;
+                font-size:16px;
+                color:#fff;
+                span{padding:0 20px;border-right:1px solid #ccc;display:inline-block;line-height:16px;}
+            }
+            &:hover a{
+                color:#FFC400;
+
+            }
+        }
+        li:last-child a span{
+            border-right:none;
+        }
+    }
+    .nav_r{
+        width:210px;
+        height:$navHeight;//40
+        float:right;
+        a{
+            display:block;
+            text-align:center;
+            line-height:24px;
+            height:24px;
+            margin-top:7px;
+            float:left;
+            position:relative;
+        }
+        a:first-child{
+            width:122px;
+            color:#333333;
+            background-color:#fff;
+            border-radius:3px 0 0 3px;
+            i.iconfont{
+                padding:0 2px;
+            }
+            i.xia{
+                display:block;
+                width:8px;
+                height:4px;
+                position:absolute;
+                top:10px;
+                right:10px;
+                background:url("../img/fw.fw.png");
+            }
+        }
+        a:last-child{
+            width:70px;
+            color:$mainFontColor;
+            background-color:#FCBE11;
+            border-radius:0 3px 3px 0;
+            i{
+                display:block;
+                width:5px;
+                height:8px;
+                position:absolute;
+                top:8px;
+                right:7px;
+                background:url("../img/fw.fw.png") 0px -9px;
+            }
+        }
+    }
+}

@@ -18,7 +18,11 @@ require(['config'],function(){
             e.preventDefault();
         })
         // 以上是导航栏点击效果
-        
+            
+
+
+
+
         // 人气排行榜tab标签切换
         var $ul_tabs = $('#tabs')
         var $content = $ul_tabs.next().children();
