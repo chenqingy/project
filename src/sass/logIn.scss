@@ -6,5 +6,140 @@
 #main{
     .container{
         background-color:#CBEAFE;
+        width: 950px;
+        height: 465px;
+        margin: 0 auto;
+        // background: url(../images/login/login_bg.jpg) no-repeat center bottom;
+        position: relative;
+        .login_box{
+            width: 328px;
+            height: 350px;
+            border: 2px solid #EEDFBB;
+            background: #fff;
+            position: absolute;
+            right: 177px;
+            bottom: 64px;
+            .title{
+                height: 31px;
+                line-height: 31px;
+                background-color:#F2F2F2;
+                h2{padding-left: 10px;font: bold 14px/31px Verdana, Geneva, sans-serif}
+            }
+            .boxMain{
+                height: 300px;
+                border: 1px solid #C7012C;
+                padding: 10px;
+                .tips{
+                    height: 30px;
+                    border: 1px solid #ccc;
+                    line-height: 30px;
+                    padding-left: 10px;
+                    background: #FAFAFA;
+                    margin-bottom: 5px;
+                }
+                .errTips{
+                    border: 1px solid #F3CEB5;
+                    line-height: 30px;
+                    padding-left: 33px;
+                    margin-bottom: 5px;
+                    color: #C5002C;
+                    display: none;
+                }
+                table{
+                    width:100%;
+                    border-bottom:1px dotted #ccc;
+                    padding-bottom:5px;
+                    td{
+                        padding-left:10px;
+                        input{
+                            padding-left:5px;
+                        }
+                    }
+                    label{
+                        display:inline-block;
+                        line-height:32px;
+                        width: 22%;
+                        height: 32px;
+                        text-align:center;
+                    }
+                    tr:nth-child(3){
+                        td{
+                            padding-left:73px;
+                        }
+                    }
+                    .pnCode{
+                        display:none;
+                    }
+                }
+                .unite_login{
+                    p,ul{
+                        height:80px;
+                        float:left;
+                        padding-top:10px;
+                    }
+                    p{
+                        width:70px;
+                        text-align:center;
+                    }
+                    ul{
+                        width:232px;
+                        li{
+                            float:left;
+                            margin-right:5px;
+                            a{
+                                text-decoration:underline;
+                                line-height:20px;
+                                color:#3F70FC;
+                                padding-left:16px;
+                                background:url('../img/fw.fw.png') 0 -253px no-repeat;
+                            }
+                        }
+                        li:nth-child(2) a{
+                            background:url('../img/fw.fw.png') 0 -273px no-repeat;                            
+                        }
+                        li:nth-child(3) a{
+                            background:url('../img/fw.fw.png') 0 -290px no-repeat;                            
+                        }
+                        li:nth-child(4) a{
+                            background:url('../img/fw.fw.png') 0 -310px no-repeat;                            
+                        }
+                        li:nth-child(5) a{
+                            background:url('../img/fw.fw.png') 0 -330px no-repeat;                            
+                        }
+                        li:nth-child(6) a{
+                            background:url('../img/fw.fw.png') 0 -350px no-repeat;                            
+                        }
+                        li:nth-child(7) a{
+                            background:url('../img/fw.fw.png') 0 -370px no-repeat;                            
+                        }
+                        li:nth-child(8) a{
+                            background:url('../img/fw.fw.png') 0 -390px no-repeat;                            
+                        }
+
+                    }
+                }
+                .main_login{
+                    padding-left:70px;
+                    a:first-child{
+                        display:inline-block;
+                        height:40px;
+                        line-height:40px;
+                        background-color:#F6F6F6;
+                        color:#4B79FC;
+                        border-radius:5px;
+                        border:1px solid #ccc;
+                        width:140px;
+                        text-align:center;
+                        font-weight:bold;
+                        font-size:16px;
+                    }
+                    a:last-child{
+                        text-decoration:underline;
+                        margin-left:5px;
+                        color:#3F70FC;
+                    }
+                }
+            }
+        }
     }
 }
