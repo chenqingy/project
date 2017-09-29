@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/head.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/buycar.css" />
+</head>
+<body>
+    <div class="box">
+        <div id="Head"></div>
+        <div id="search">
+            <div class="container clearfix">
+                <a href="../index.html"><img src="../img/buycarlogo.png"/></a>
+                <ul class="clearfix">
+                    <li>我的购物车</li>
+                    <li>确认订单信息</li>
+                    <li>成功提交订单</li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div class="container">
+                <div class="cart_title clearfix">
+                    <h2>
+                        我挑选的商品
+                    </h2>
+                    <div>
+                        飞虎自营：单笔订单满59免运费
+                        <a href="#">查看详情</a>
+                        <span>&times;</span>
+                    </div>
+                </div>
+                <div class="main_content">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th class="col_num"><label><input name="select-all" class="J_checkall checkedAll" type="checkbox" value="" checked="checked">全选</label></th>
+                                <th>
+                                    <div class="col_img"><em class="color_c00">飞虎自营商品</em></div>
+                                    <div class="col_name">商品名称</div>
+                                    <div class="col_quantity">商品数量</div>
+                                    <div class="col_price">商品单价</div>
+                                    <div class="col_total">飞虎总价</div>
+                                    <div class="col_op">操作</div>
+                                </th>
+                            </tr>                          
+                            <tr data-index="1" class="data_item" data-type="Product" data-id="2050226000740" data-qty="1">
+                                <td class="col_num">
+                                    <label><input name="pdt_index" class="J_checkitem" data-group="" type="checkbox" value="P2050226000740" checked="checked"></label>
+                                </td>
+                                <td class="col_content">
+                                    <div class="col_img">
+                                        <div class="ui_pimg175">
+                                            <a class="img" hidefocus="true" target="_blank" href="/Product/2050226000740.html">
+                                                <img width="75" height="75" alt="" src="http://image.efeihu.com/images/sdimage/d31bde07-8b71-4278-83f7-3de97053d87f.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item_content">
+                                        <div class="clearfix">
+                                            <div class="col_name">
+                                                <a hidefocus="true" target="_blank" href="/Product/2050226000740.html">三星（Samsung）Galaxy S8（SM-G9508）4GB+64GB 移动联通电信4G手机 全网通 双卡双待（烟晶灰）</a>
+                                            </div>
+                                            <div class="col_quantity">
+                                            <div id="z_qty_2" class="ui_quantity">
+                                                <input type="text" class="ui_quantity_txt ui_quantity_edit" value="1">
+                                                <span class="ui_quantity_plus"></span>
+                                                <span class="ui_quantity_redu"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col_price">
+                                                   <span class="ui_price"><b>¥</b>&nbsp;</span><span>5488</span>
+                                            </div>
+                                            <div class="col_total">
+                                                <span class="ui_price"><b>¥</b>&nbsp;</span><span class="newTotalPrice">5488</span>
+                                            </div>
+                                            <div class="col_op">
+                                                <a href="javascript:void(0)" class="delete" onclick="removeProductItem(this, '2050226000740','Product')">删除</a>  
+                                                  |
+                                                <a href="javascript:void(0)" class="delete addFav" onclick="addFav(this,'2050226000740',1)">收藏</a>   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>    
+                        </tbody>
+                    </table>
+                    <div class="mainCarTotal clearfix">
+                        <div>
+                            <span>不同商家商品无法合并订单购买，请粉分别结算</span>
+                            <a href="#" class="iconfont icon-lipin">清空购物车</a>
+                        </div>
+                        <div>
+                            <p>总金额：<span class="total">￥49</span></p>
+                            <p>还差<span class="price">￥10</span>元可以享受免运费<a href="#">凑单免运费</a></p>
+                            <div class="account">
+                                <a href="#">继续购物</a>
+                                <a href="#">去 结 算</a>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="main_addItem">
+                        <div class="itemTittle clearfix">
+                            <p>凑单商品</p>
+                            <ul class="clearfix">
+                                <li>全部</li>
+                                <li>洗护美妆</li>
+                                <li>洗护美妆</li>
+                                <li>洗护美妆</li>
+                            </ul>
+                        </div>
+                        <div class="goodsItem clearfix">
+                            <div class="prev"><i></i></div>
+                            <ul class="clearfix">
+                                <li><a href="#">
+                                        <img src="../img/goodItem1.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem2.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem3.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem4.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem5.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem6.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem7.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem8.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem9.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem10.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                            </ul>
+                            <div class="next"><i></i></div>
+                        </div>
+                        <div class="itemTittle clearfix">
+                            <p>猜你喜欢</p>
+                        </div>
+                        <div class="goodsItem goodsItem2 clearfix">
+                            <ul class="clearfix">
+                                <li><a href="#">
+                                        <img src="../img/goodItem1.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem2.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem3.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem4.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem5.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem6.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem7.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem8.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem9.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="../img/goodItem10.png" alt="" />
+                                        <span>杰尔威亚光质感男士法拉</span>
+                                        <p class="price">￥39</p>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Foot1"></div>
+    </div>
+    <script src="../lib/require.js" data-main="../js/buycar" type="text/javascript"></script>
+</body>
+</html>

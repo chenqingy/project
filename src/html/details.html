@@ -10,40 +10,7 @@
 </head>
 <body>
     <div class="box">
-        <div id="head">
-            <div class="container clearfix">
-                <ul class="head_l clearfix">
-                    <li><span>您好，欢迎来到飞虎乐购</span></li>
-                    <li><a href="#">安全登录</a></li>
-                    <li><span>还没加入我们?</span></li>   
-                    <li><a href="#">免费注册</a></li>
-                </ul>  
-                <ul class="head_r">
-                    <li>
-                        <a href="#">
-                            <span>我的账户</span><i></i>
-                        </a>
-                        <ul>
-                            <li>账户首页</li>
-                            <li>我的收藏</li>
-                            <li>我的订单</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>网站导航</span><i></i>
-                        </a>
-                        <ul>
-                            <li>帮助中心</li>
-                            <li>联系客服</li>
-                            <li>常见问题</li>
-                        </ul>
-                    </li>
-                    <li><a href="#"><span>加入收藏</span></a></li>
-                    <li><a href="#"><span><i class="iconfont icon-dianhua"></i>400 883 6900</span></a></li>
-                </ul>
-            </div>
-        </div>
+        <div id="Head"></div>
         <div id="search">
             <div class="container clearfix">
                 <h1><a href="../index.html"><img src="../img/logo.png" alt="" /></a></h1>
@@ -400,73 +367,582 @@
                 </ul>
                 <div class="nav_r">
                     <a href="#"><i class="iconfont icon-gouwuchekong"></i>购物车(0)<i class="xia"></i></a>
-                    <a href="#">去结算<i></i></a>
+                    <a href="buycar.html">去结算<i></i></a>
                 </div>
             </div>
         </div>
-        <!-- <div id="main">
+        <div id="main">
             <div class="container">
-                
+                <div class="main_top clearfix">
+                    <a href="../index.html">综合专区</a>
+                    <span>&gt;</span>
+                    <a href="datalist.html">手机数码</a>
+                    <span>&gt;</span>
+                    <a href="datalist.html">手机</a>
+                    <span>&gt;</span>
+                    <span class="itemname"></span>
+                </div>
+                <div id="goods" class="clearfix">
+                    <div class="goodsleft">
+                        <div class="img">
+                            
+                        </div>
+                        <div class="smallimg clearfix">
+                            <div class="btn_prev">
+                                <span>
+                                    &lt;
+                                </span>
+                            </div>
+                            <div class="content">
+                                <ul class="clearfix">
+                                    <li><img src="../img/phone1_1.jpg" alt="" /></li>
+                                    <li><img src="../img/phone1_2.jpg" alt="" /></li>
+                                    <li><img src="../img/phone1_3.jpg" alt="" /></li>
+                                    <li><img src="../img/phone1_4.jpg" alt="" /></li>
+                                    <li><img src="../img/phone1_1.jpg" alt="" /></li>
+                                    <li><img src="../img/phone1_2.jpg" alt="" /></li>
+                                    <li><img src="../img/phone1_3.jpg" alt="" /></li>
+                                    <li><img src="../img/phone1_4.jpg" alt="" /></li>
+                                </ul>
+                            </div>                                
+                            <div class="btn_next">
+                                <span>
+                                    &gt;
+                                </span>
+                            </div>                                
+                        </div>
+                        <div>
+                            <a href="#">浏览更多图片</a>
+                            <span>分享到：</span>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="goodsright">
+                        <div class="goodsname">
+
+                        </div>
+                        <div class="goodsprice">
+                            <div class="price">
+                                
+                            </div>
+                            <p>
+                                本次消费最多可获得9000点积分（抵现金：￥300元）
+                                <a href="#">如何获取积分</a>
+                            </p>
+                            <span>商品编号2050226000320</span>
+                        </div>
+                        <div>
+                            <p>温馨提示：该商品不支持<span>货到付款</span></p>
+                            <p>库存：送至
+                                <select name="add" id="add">
+                                    <option value="广东">广东</option>
+                                </select>
+                                <span>2-4天</span>
+                            </p>
+                            <p>由<span>飞虎乐购</span>发货，并提供售后服务</p>
+                            <p>商品评价</p>
+                        </div>
+                        <div class="goodstab">
+                            <ul class="color clearfix">
+                                <li>选择颜色：</li>
+                                <li>玫瑰金</li>
+                                <li>草木绿</li>
+                                <li>曜石黑</li>
+                                <li>钻雕金</li>
+                            </ul>
+                            <ul class="size clearfix">
+                                <li>选择内存：</li>
+                                <li>64GB</li>
+                                <li>128GB</li>
+                            </ul>
+                            <ul class="qty clearfix">
+                                <li>我 要 买 ：</li>
+                                <li><button>-</button></li>
+                                <li><input type="text" value="1"/></li>
+                                <li><button>+</button></li>
+                            </ul>
+                            <span class="selected">
+                                已选择
+                                <span class="showcolor"></span>
+                                <span class="showsize"></span>
+                            </span>
+                            <div class="clearfix">
+                                <a href="#">立即购买</a>
+                                <a href="#" class="iconfont icon-gouwuchekong">加入购物车</a>
+                            </div>
+                            
+                        </div>
+                    </div>                    
+                </div>
+                <div class="other clearfix">
+                    <div class="otherleft">
+                        <div class="left1">
+                            <div>
+                                <p>相关分类</p>
+                                <ul class="clearfix">
+                                    <li><a href="#">手机</a></li>
+                                    <li><a href="#">手机配件</a></li>
+                                    <li><a href="#">手机配件</a></li>
+                                    <li><a href="#">手机配件</a></li>
+                                    <li><a href="#">手机配件</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="left2">
+                            <div>
+                                <p>同品销售排行</p>
+                                <ul class="clearfix" id="tab">
+                                    <li>同类别</li>
+                                    <li>同价位</li>
+                                    <li>同品牌</li>
+                                </ul>
+                                <div class="content1">
+                                    <ul class="clearfix tabcontent">
+                                        <li>
+                                            <img src="../img/phone1.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone2.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone3.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone4.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone5.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="clearfix tabcontent">
+                                        
+                                        <li>
+                                            <img src="../img/phone2.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone3.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone1.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone4.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone5.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="clearfix tabcontent">
+                                        <li>
+                                            <img src="../img/phone1.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone2.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone3.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone4.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone5.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left1">
+                            <div>
+                                <p>相关品牌</p>
+                                <ul class="clearfix">
+                                    <li><a href="#">夏普</a></li>
+                                    <li><a href="#">纽曼</a></li>
+                                    <li><a href="#">中心</a></li>
+                                    <li><a href="#">华为</a></li>
+                                    <li><a href="#">苹果</a></li>
+                                    <li><a href="#">三星</a></li>
+                                </ul>
+                            </div>
+                        </div><div class="left2">
+                            <div>
+                                <p>同品销售排行</p>
+                                <ul class="clearfix" id="tab1">
+                                    <li>同类别</li>
+                                    <li>同价位</li>
+                                    <li>同品牌</li>
+                                </ul>
+                                <div class="content1">
+                                    <ul class="clearfix tabcontent">
+                                        <li>
+                                            <img src="../img/phone1.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone2.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone3.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone4.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone5.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="clearfix tabcontent">
+                                        
+                                        <li>
+                                            <img src="../img/phone2.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone3.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone1.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone4.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone5.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="clearfix tabcontent">
+                                        <li>
+                                            <img src="../img/phone1.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone2.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone3.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone4.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                        <li>
+                                            <img src="../img/phone5.png" alt="" />
+                                            <h4>Apple ihone8plus A(1864) 256GB</h4>
+                                            <p class="price">￥7988</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="otherright">
+                        <ul class="clearfix" id="tab3">
+                            <li>产品介绍</li>
+                            <li>产品介绍</li>
+                            <li>产品介绍</li>
+                            <li>产品介绍</li>
+                        </ul>
+                        <div class="content3">
+                            <div class="goodscontent">
+                                <div class="introduce clearfix">
+                                    <p>生产厂家:华为</p>
+                                    <p>商品产地:中国大陆</p>
+                                    <p>商品毛重:0.3Kg</p>
+                                    <p>上架时间:2017/6/29 9:56:48</p>
+                                    <p>价格举报:如果您发现商品价有错误，欢迎举报</p>
+                                    <p>纠错信息:如果您发现商品信息不准确欢迎纠错</p>
+                                </div>
+                                <div class="imgcontent">
+                                    <img src="../img/goodscontent1.jpg"/>
+                                </div>
+                            </div>
+                            <div class="goodscontent">
+                                <table border="0" cellpadding="0" cellspacing="0" class="vi_proParameters_table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="lbl">类别</td>
+                                            <td class="smalllbl">类别</td>
+                                            <td class="value">智能手机</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3" class="lbl">主体</td>
+                                            <td class="smalllbl">品牌</td>
+                                            <td class="value">华为</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">型号</td>
+                                            <td class="value">华为 P10</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">上市年份</td>
+                                            <td class="value">2017年3月</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3" class="lbl">基本信息</td>
+                                            <td class="smalllbl">机身尺寸</td>
+                                            <td class="value">145.3×69.3×6.98mm</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">机身重量</td>
+                                            <td class="value">约145g（含电池）</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">机身颜色</td>
+                                            <td class="value">玫瑰金</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" class="lbl">操作系统</td>
+                                            <td class="smalllbl">操作系统</td>
+                                            <td class="value">安卓</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">操作系统版本</td>
+                                            <td class="value">华为 EMUI 5.1（兼容Android 7.0）</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4" class="lbl">主芯片</td>
+                                            <td class="smalllbl">CPU品牌</td>
+                                            <td class="value">海思（Hisilicon）</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">CPU型号</td>
+                                            <td class="value">麒麟960</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">CPU频率</td>
+                                            <td class="value">4×Cortex A73 2.4GHz + 4×Cortex A53 1.8GHz</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">CPU核心数</td>
+                                            <td class="value">八核 + 微智核i6</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" class="lbl">网络支持</td>
+                                            <td class="smalllbl">SIM卡类型</td>
+                                            <td class="value">Nano SIM</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">最大SIM卡数量</td>
+                                            <td class="value">2个</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="4" class="lbl">存储</td>
+                                            <td class="smalllbl">RAM</td>
+                                            <td class="value">4GB</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">ROM</td>
+                                            <td class="value">128GB</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">是否支持存储卡</td>
+                                            <td class="value">是</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">最大存储拓展容量</td>
+                                            <td class="value">最高支持256GB</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" class="lbl">屏幕</td>
+                                            <td class="smalllbl">分辨率</td>
+                                            <td class="value">1920*1080(FHD)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">主屏幕尺寸（英寸）</td>
+                                            <td class="value">5.1英寸</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" class="lbl">摄像头</td>
+                                            <td class="smalllbl">前置摄像头像素</td>
+                                            <td class="value">800万像素</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">后置摄像头像素</td>
+                                            <td class="value">1200万像素；2000万像素</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" class="lbl">电池信息</td>
+                                            <td class="smalllbl">电池容量</td>
+                                            <td class="value">3200mAh</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">电池是否可拆卸</td>
+                                            <td class="value">不可拆卸</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" class="lbl">数据接口</td>
+                                            <td class="smalllbl">充电接口类型</td>
+                                            <td class="value">Type-C</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">NFC / NFC模式</td>
+                                            <td class="value">支持</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" class="lbl">手机特性</td>
+                                            <td class="smalllbl">指纹识别</td>
+                                            <td class="value">支持</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="smalllbl">GPS</td><td class="value">支持</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="goodscontent">
+                                <div class="goodscontent_cont">
+                                    <p>手机（含内置电池） x 1、大电流华为SuperCharge充电器 x 1、USB数据线 x 1、半入耳式线控耳机 x 1、快速指南 x 1、三包凭证 x 1、取卡针 x 1、保护壳 x 1</p>
+                                </div>                                
+                                <div class="goodscontent_notice">
+                                    <b>特别声明:</b>
+                                    因厂家商品批次不同，您收到的货物可能会与网站展示图片、说明不完全一致，请您以收到的商品实物为准。如给您带来不便，敬请谅解！
+                                </div>
+                            </div>
+                            <div class="goodscontent">
+                                <div class="aftersale">
+                                    <p>
+                                        <span>
+                                             本产品全国联保，享受三包服务，质保期为：一年质保。如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7日内退货，15日内换货， 15日以上在质保期内享受免费保修等三包服务！
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="clearfix tab4">
+                            <li>用户评论</li>
+                            <li>满意（0）</li>
+                            <li>一般（0）</li>
+                            <li>不满意（0）</li>
+                        </ul>
+                        <div class="content4 triggers">
+                            <div class="comment">
+                                <div class="ui_comment_rateCon clearfix">
+                                    <div class="rate_total">
+                                        <div class="title">商品综合得分</div>
+                                        <div class="ui_psorce"><em style="width:80%"></em></div>
+                                        <div class="hint"><em>4分</em>满意</div>
+                                    </div>
+                                    <div class="rate_detail">
+                                        <div class="title">满意度得分</div>
+                                        <dl class="rate_item">
+                                            <dt>送货速度：</dt>
+                                            <dd><div class="ui_psorce"><em style="width:80%"></em></div></dd>
+                                        </dl>
+                                        <dl class="rate_item">
+                                            <dt>商品质量：</dt>
+                                            <dd><div class="ui_psorce"><em style="width:80%"></em></div></dd>
+                                        </dl>
+                                        <dl class="rate_item">
+                                            <dt>商品价格：</dt>
+                                            <dd><div class="ui_psorce"><em style="width:80%"></em></div></dd>
+                                        </dl>
+                                    </div>
+                                    <div class="comment_user">
+                                        <dl class="fivefirst">
+                                            <dt>前5位评价用户：</dt>
+                                            <dd><span id="cmmMemberString"></span></dd>
+                                        </dl>
+                                        <p class="hint">发表评论，通过审核即获积分，前5位评论用户有机会获得双倍积分哦！<a class="ui_access" target="_blank" href="/Pages/Help_Internet/JiFenShuoMing.aspx">详见积分规则</a></p>
+                                        <p style="color:#F60;">
+                                            需购买才可对商品进行评论
+                                        </p>
+                                    </div>
+                                    <div class="op">
+                                        <a href="javascript:;" class="btn_press" checkhasbuy="true" pro="2050226000320" id="commont_id">我要评论</a>
+                                        <p class="comment_num"><a id="ctl00_ContentPlaceHolder1_CommentAndConsult1_TotalEvaluateNew1_hlkallcomment" class="ui_access" href="../Pages/ProductShow/AllComment.aspx?pidno=2050226000320">查看全部<span id="tevaCommentSize">0</span>条评论</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment">2</div>
+                            <div class="comment">3</div>
+                            <div class="comment">4</div>
+                        </div>
+                        <ul class="clearfix tab4">
+                            <li>用户咨询（0）</li>
+                            <li>产品咨询（0）</li>
+                            <li>库存与配送（0）</li>
+                            <li>支付问题（0）</li>
+                            <li>发票与保修（0）</li>
+                        </ul>
+                        <div class="content4">
+                            <div class="comment">1</div>
+                            <div class="comment">2</div>
+                            <div class="comment">3</div>
+                            <div class="comment">4</div>
+                            <div class="comment">5</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div> -->
-        <!-- <div id="foot">
-            <div class="container clearfix">
+        </div>
+        <div class="foottop clearfix">
+            <div class="container">
                 <ul>
                     <li>质量放心<span>全场正品100%</span></li>
                     <li>购物安心<span>全场正品100%</span></li>
                     <li>服务贴心<span>全场正品100%</span></li>
                 </ul>
-                <dl>
-                    <dd>订购咨询热线：<span>400-883-6900</span></dd>
-                    <dd>订购咨询热线：<span>400-883-6900</span></dd>
-                    <dd>
-                        <i></i>
-                        <p>周一至周六：<span>08:00-21:00</span></p>
-                        <p>周日：<span>09:00-18:00</span></p>
-                    </dd>
-                </dl>
-                <dl>
-                    <dt>购物指南</dt>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">购物流程</a></dd> 
-                    <dd><a href="#">积分说明</a></dd>
-                    <dd><a href="#">优惠券</a></dd> 
-                    <dd><a href="#">第三方服务说明</a></dd>  
-                    <dd><a href="#">团购规则</a></dd> 
-                </dl>  
-                <dl>
-                    <dt>支付方式</dt>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">购物流程</a></dd> 
-                </dl>
-                <dl>
-                    <dt>配送方式</dt>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">购物流程</a></dd> 
-                </dl>
-                <dl>
-                    <dt>售后服务</dt>
-                    <dd><a href="#">飞虎自营售后策略</a></dd>
-                    <dd><a href="#">第三方买家售后策略</a></dd>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">购物流程</a></dd> 
-                </dl>
-                <dl>
-                    <dt>特色服务</dt>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">购物流程</a></dd>
-                    <dd><a href="#">购物流程</a></dd> 
-                </dl>
-            </div>
-        </div> -->
+            </div>                
+        </div>
+        <div id="Foot"></div>
     </div>
-    <!-- <script src="../lib/require.js" data-main="../js/details"></script> -->
+    <script src="../lib/require.js" data-main="../js/details"></script>
 </body>
 </html>

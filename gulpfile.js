@@ -43,7 +43,7 @@ gulp.task('server',function(){
 
         // 监听文件修改
         // 当文件有修改时，自动刷新页面
-        files:['./src/**/*.html','./src/css/*.css','./src/api/*.php']
+        files:['./src/**/*.html','./src/css/*.css','./src/api/*.php','./src/js/*.js']
     });
 
     // 监听sass的修改

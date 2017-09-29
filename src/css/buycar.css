@@ -1,0 +1,331 @@
+#search a, #search ul {
+  float: left;
+  display: block;
+}
+
+#search ul {
+  padding-top: 35px;
+}
+
+#search ul li {
+  float: left;
+  background-color: #C7012C;
+  margin-right: 5px;
+  width: 207px;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 36px;
+  color: #fff;
+  font-size: 16px;
+}
+
+#main {
+  background-color: #fff;
+}
+
+#main .cart_title {
+  padding: 15px 0;
+}
+
+#main .cart_title h2 {
+  font-size: 16px;
+  color: #333;
+  float: left;
+}
+
+#main .cart_title div {
+  float: left;
+  width: 278px;
+  border: 1px solid #ccc;
+  height: 25px;
+  margin-left: 23px;
+  line-height: 20px;
+  padding-left: 10px;
+  position: relative;
+}
+
+#main .cart_title div span {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+
+#main .cart_title div span:hover {
+  background-color: #ccc;
+}
+
+#main .main_content {
+  min-height: 302px;
+}
+
+#main .main_content table {
+  border-top: 2px solid #C7012C;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+#main .main_content table .ui_quantity {
+  height: 21px;
+  padding-right: 20px;
+  position: relative;
+  width: 50px;
+}
+
+#main .main_content table tbody {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+#main .main_content table tbody tr {
+  overflow: hidden;
+}
+
+#main .main_content table tbody tr th {
+  height: 35px;
+  line-height: 35px;
+  border-bottom: solid 1px #ddd;
+  border-right: solid 1px #ddd;
+  font-weight: normal;
+}
+
+#main .main_content table tbody tr th div {
+  float: left;
+}
+
+#main .main_content table tbody .col_num {
+  width: 60px;
+  border: solid 1px #ddd;
+  border-top: none;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#main .main_content table tbody .col_img {
+  width: 206px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#main .main_content table tbody .col_name {
+  width: 353px;
+}
+
+#main .main_content table tbody .col_quantity {
+  width: 160px;
+}
+
+#main .main_content table tbody .col_price {
+  width: 140px;
+}
+
+#main .main_content table tbody .col_total {
+  width: 140px;
+}
+
+#main .main_content table tbody .col_op {
+  float: left;
+  width: 60px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#main .main_content table tbody .col_content {
+  border-bottom: solid 1px #ddd;
+  border-right: solid 1px #ddd;
+  padding: 12px 0;
+}
+
+#main .main_content table tbody .col_content .col_img {
+  padding: 0 15px;
+  margin-right: 5px;
+  float: left;
+}
+
+#main .main_content table tbody .col_content .item_content {
+  float: left;
+  width: 866px;
+  padding: 6px 0 0;
+  line-height: 21px;
+}
+
+#main .main_content table tbody .col_content .item_content div {
+  float: left;
+}
+
+#main .main_content table tbody .col_content .item_content .col_quantity input {
+  width: 100%;
+}
+
+#main .main_content .mainCarTotal {
+  padding-top: 10px;
+  border: 1px solid #ccc;
+}
+
+#main .main_content .mainCarTotal div:first-child {
+  color: #C7012C;
+  float: left;
+}
+
+#main .main_content .mainCarTotal div:first-child a {
+  color: #333;
+  display: block;
+  padding-left: 10px;
+  margin-top: 50px;
+  font-size: 12px;
+}
+
+#main .main_content .mainCarTotal div:last-child {
+  float: right;
+  padding-right: 30px;
+}
+
+#main .main_content .mainCarTotal div:last-child p {
+  color: #333;
+  font-weight: bold;
+}
+
+#main .main_content .mainCarTotal div:last-child p span {
+  color: #C7012C;
+}
+
+#main .main_content .mainCarTotal div:last-child p a {
+  display: inline-block;
+  width: 84px;
+  border: 1px solid #FFD897;
+  background-color: #FFF3DF;
+  line-height: 24px;
+  color: #1C8BC6;
+  text-align: center;
+  margin-left: 5px;
+}
+
+#main .main_content .mainCarTotal div:last-child .total {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#main .main_content .mainCarTotal div:last-child .account {
+  height: 72px;
+  padding-right: 0px;
+  margin-top: 20px;
+}
+
+#main .main_content .mainCarTotal div:last-child .account a {
+  display: inline-block;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  background-color: #F87600;
+  width: 190px;
+}
+
+#main .main_content .mainCarTotal div:last-child .account a:first-child {
+  width: 112px;
+  border: 1px solid #ccc;
+  background-color: #FAFAFA;
+  color: #333;
+  margin-top: 6px;
+  font-weight: bold;
+  line-height: 38px;
+  margin-right: 20px;
+}
+
+#main .main_content .main_addItem .itemTittle {
+  background-color: #F7F7F7;
+  border-bottom: 1px solid #ccc;
+  border-top: 2px solid #C7012C;
+  padding-left: 15px;
+}
+
+#main .main_content .main_addItem .itemTittle p {
+  float: left;
+  color: #C7012C;
+  line-height: 42px;
+  font-size: 16px;
+}
+
+#main .main_content .main_addItem .itemTittle ul {
+  margin-top: 5px;
+  float: right;
+}
+
+#main .main_content .main_addItem .itemTittle ul li {
+  float: left;
+  line-height: 30px;
+  padding: 0 5px;
+  margin-right: 5px;
+  color: #333;
+}
+
+#main .main_content .main_addItem .itemTittle ul li:active {
+  border: 1px solid #ccc;
+}
+
+#main .main_content .main_addItem .goodsItem {
+  height: 246px;
+  border-bottom: 1px solid #ccc;
+}
+
+#main .main_content .main_addItem .goodsItem div {
+  position: relative;
+  float: left;
+  width: 25px;
+  height: 246px;
+}
+
+#main .main_content .main_addItem .goodsItem div i {
+  display: block;
+  position: absolute;
+  width: 21px;
+  height: 31px;
+  background: url("../img/fw.fw.png") 0 -190px;
+  top: 50%;
+  left: 0px;
+  transform: translate(0, -50%);
+}
+
+#main .main_content .main_addItem .goodsItem .next i {
+  background: url("../img/fw.fw.png") 0 -222px;
+}
+
+#main .main_content .main_addItem .goodsItem ul {
+  margin-top: 10px;
+  width: 1100px;
+  float: left;
+}
+
+#main .main_content .main_addItem .goodsItem ul li {
+  float: left;
+  width: 200px;
+  margin-right: 20px;
+  margin-top: 33px;
+}
+
+#main .main_content .main_addItem .goodsItem ul li img {
+  float: left;
+}
+
+#main .main_content .main_addItem .goodsItem ul li span, #main .main_content .main_addItem .goodsItem ul li p {
+  float: left;
+}
+
+#main .main_content .main_addItem .goodsItem ul li span {
+  color: #333;
+  line-height: 20px;
+}
+
+#main .main_content .main_addItem .goodsItem ul li p {
+  color: #C7012C;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#main .main_content .main_addItem .goodsItem2 {
+  padding: 0 25px;
+}

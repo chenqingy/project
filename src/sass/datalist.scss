@@ -12,7 +12,6 @@ p.price{
     color:#C7012C;
     font-size:14px;
     padding-left:21px;
-    
 }
 #main{
     $fontColor:#666666;
@@ -219,9 +218,14 @@ p.price{
                                 h4,p{
                                     line-height:20px;
                                     padding-left:21px;
+                                    
                                 }
                                 h4{
-                                    color:$fontColor;
+                                    a{
+                                        color:$fontColor;
+                                        &:hover{text-decoration:underline;color:blue;}
+                                    }
+                                    
                                 }
                                 p{
                                     color:#FF9900;
@@ -276,10 +280,42 @@ p.price{
                         }
                         .datalist2{
                             height:360px;
+                            ul{
+                                position:absolute;
+                                li{
+                                    float:left;
+                                    width:192px;
+                                    >a:first-child{
+                                        display:block;
+                                        img{}
+                                    }
+                                    h4,p{
+                                        line-height:20px;
+                                        padding-left:21px;
+                                        height: 20px;
+                                        overflow: hidden;
+                                    }
+                                    h4{
+                                        a{
+
+                                            color:$fontColor;
+                                            &:hover{text-decoration:underline;color:blue;}
+                                        }
+                                        
+                                    }
+                                    p{
+                                        color:#FF9900;
+                                    }
+                                    p.price{
+                                        @extend p.price;
+                                        margin-top:38px;
+                                    }
+                                }
+                            }
                         }
                         
                     }
-                    div:first-child ul li:first-child{width:56px;}
+                    div:first-child>ul li:first-child{width:56px;}
                 }
             }
         }

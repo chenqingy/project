@@ -1,7 +1,8 @@
 require(['config'],function(){
-    require(['jquery','common'],function($,common){
+    require(['jquery','common','head_foot'],function($,common,head_foot){
         //jquery加载完成后，执行这里的代码
         
+        // load首页路径
         // main左边第一部分的点击效果
         $('.main_jia').on('click','li>a',function(e){
 
@@ -19,12 +20,37 @@ require(['config'],function(){
         })
         // 以上是导航栏点击效果
             
+        // tab标签切换的数据
+        var $ul_tabs = $('#tabs');
+        var $datalist2 = $('.datalist2');
+        // console.log($datalist2);
+        $.ajax({
+            url: "../api/goodslist.php", 
+            success: function(res){
+                // console.log(res);
+                console.log($.parseJSON(res));
+                res = $.parseJSON(res);
+                var $ul = $('<ul/>');
+                $ul.addClass('clearfix');
+                var html = res.map(function(item){
+                    console.log(item.imgurl);
+                    return `<li data-guid="${item.id}">
+                        <a href="details.html?id=${item.id}&name=${encodeURI(item.name)}&imgurl=${encodeURI(item.imgurl)}&price=${encodeURI(item.price)}&description=${encodeURI(item.description)}"><img src="${item.imgurl}"></a>
+                        <h4>${item.name}</h4>
+                        <p>${item.description}</p>
+                        <p class="price clearfix">${item.price}</p>
+                    </li>`
+                }).join('');
+                $ul.html(html);
 
-
-
+                $datalist2.html('') 
+                $datalist2.append($ul);                    
+            }
+        });
+        
+            
 
         // 人气排行榜tab标签切换
-        var $ul_tabs = $('#tabs')
         var $content = $ul_tabs.next().children();
         var $liItems = $('#tabs').children();
         // 隐藏除了第一个意外的内容
@@ -32,7 +58,6 @@ require(['config'],function(){
         // 给第一个li加高亮
         $liItems.first().addClass('active');
         $ul_tabs.on('mouseenter','li',function(){
-            // 获取当前索引值
             var idx = $(this).index();
             // 高亮
             $(this).addClass('active').siblings('li').removeClass();

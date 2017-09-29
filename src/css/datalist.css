@@ -3,7 +3,7 @@
   background-color: #FAFAFA;
 }
 
-p.price, #main .container .main_content .main_r .arrage .datalist-left ul li p.price {
+p.price, #main .container .main_content .main_r .arrage .datalist-left ul li p.price, #main .container .main_content .main_r .product .product_class .datalist2 ul li p.price {
   font-weight: bold;
   color: #C7012C;
   font-size: 14px;
@@ -132,7 +132,7 @@ p.price, #main .container .main_content .main_r .arrage .datalist-left ul li p.p
   float: left;
 }
 
-#main .container .main_content .main_l .data .datalist-left ul li p.price, #main .container .main_content .main_l .data .datalist-left ul li h4 {
+#main .container .main_content .main_l .data .datalist-left ul li p.price, #main .container .main_content .main_l .data .datalist-left .main_r .product .product_class .datalist2 ul li p.price, #main .container .main_content .main_r .product .product_class .datalist2 .main_l .data .datalist-left ul li p.price, #main .container .main_content .main_l .data .datalist-left ul li h4 {
   float: left;
   width: 127px;
   padding-left: 7px;
@@ -265,15 +265,20 @@ p.price, #main .container .main_content .main_r .arrage .datalist-left ul li p.p
   padding-left: 21px;
 }
 
-#main .container .main_content .main_r .arrage .datalist-left ul li h4 {
+#main .container .main_content .main_r .arrage .datalist-left ul li h4 a {
   color: #666666;
+}
+
+#main .container .main_content .main_r .arrage .datalist-left ul li h4 a:hover {
+  text-decoration: underline;
+  color: blue;
 }
 
 #main .container .main_content .main_r .arrage .datalist-left ul li p {
   color: #FF9900;
 }
 
-#main .container .main_content .main_r .arrage .datalist-left ul li p.price {
+#main .container .main_content .main_r .arrage .datalist-left ul li p.price, #main .container .main_content .main_r .arrage .datalist-left .product .product_class .datalist2 ul li p.price, #main .container .main_content .main_r .product .product_class .datalist2 .arrage .datalist-left ul li p.price {
   margin-top: 38px;
 }
 
@@ -325,6 +330,43 @@ p.price, #main .container .main_content .main_r .arrage .datalist-left ul li p.p
   height: 360px;
 }
 
-#main .container .main_content .main_r .product div:first-child ul li:first-child {
+#main .container .main_content .main_r .product .product_class .datalist2 ul {
+  position: absolute;
+}
+
+#main .container .main_content .main_r .product .product_class .datalist2 ul li {
+  float: left;
+  width: 192px;
+}
+
+#main .container .main_content .main_r .product .product_class .datalist2 ul li > a:first-child {
+  display: block;
+}
+
+#main .container .main_content .main_r .product .product_class .datalist2 ul li h4, #main .container .main_content .main_r .product .product_class .datalist2 ul li p {
+  line-height: 20px;
+  padding-left: 21px;
+  height: 20px;
+  overflow: hidden;
+}
+
+#main .container .main_content .main_r .product .product_class .datalist2 ul li h4 a {
+  color: #666666;
+}
+
+#main .container .main_content .main_r .product .product_class .datalist2 ul li h4 a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+#main .container .main_content .main_r .product .product_class .datalist2 ul li p {
+  color: #FF9900;
+}
+
+#main .container .main_content .main_r .product .product_class .datalist2 ul li p.price {
+  margin-top: 38px;
+}
+
+#main .container .main_content .main_r .product div:first-child > ul li:first-child {
   width: 56px;
 }

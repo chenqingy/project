@@ -109,17 +109,18 @@
   font-size: 12px;
 }
 
-#foot {
+.foottop {
+  padding-top: 20px;
   background-color: #fff;
 }
 
-#foot .container > ul {
+.foottop .container > ul {
   display: flex;
   border: 1px solid #ccc;
   border-radius: 1px;
 }
 
-#foot .container > ul li {
+.foottop .container > ul li {
   flex: 1;
   float: left;
   text-align: center;
@@ -128,10 +129,14 @@
   color: #C7012C;
 }
 
-#foot .container > ul li span {
+.foottop .container > ul li span {
   font-size: 18px;
   color: #666666;
   padding-left: 10px;
+}
+
+#foot {
+  background-color: #fff;
 }
 
 #foot .container dl {
@@ -189,4 +194,27 @@
 
 #foot .container dl:last-child {
   border-right: 0 none;
+}
+
+#foot1 {
+  background-color: #fff;
+}
+
+#foot1 .container {
+  height: 117px;
+  padding-top: 24px;
+}
+
+#foot1 .container ul li {
+  float: left;
+  padding: 0 10px;
+  border-right: 1px solid #333;
+  color: #666666;
+}
+
+#foot1 .container p {
+  line-height: 20px;
+  color: #ccc;
+  font-size: 12px;
+  padding-left: 10px;
 }

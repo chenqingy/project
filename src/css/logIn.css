@@ -1,0 +1,7 @@
+.container {
+  width: 950px;
+}
+
+#main .container {
+  background-color: #CBEAFE;
+}
