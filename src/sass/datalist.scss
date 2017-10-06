@@ -113,6 +113,7 @@ p.price{
                                     color:$fontColor;                                   
                                     padding-top:6px;
                                 }
+
                             }
                         }
                     }
@@ -222,8 +223,8 @@ p.price{
                                 }
                                 h4{
                                     a{
-                                        color:$fontColor;
-                                        &:hover{text-decoration:underline;color:blue;}
+                                        color:#7D7D7D;
+                                        &:hover{text-decoration:underline;color:#0066FF;}
                                     }
                                     
                                 }
@@ -296,10 +297,10 @@ p.price{
                                         overflow: hidden;
                                     }
                                     h4{
+                                        color:#7D7D7D;
                                         a{
-
-                                            color:$fontColor;
-                                            &:hover{text-decoration:underline;color:blue;}
+                                            color:#7D7D7D;
+                                            &:hover{text-decoration:underline;color:#0066FF;}
                                         }
                                         
                                     }
@@ -309,6 +310,11 @@ p.price{
                                     p.price{
                                         @extend p.price;
                                         margin-top:38px;
+                                        span{
+                                            font-size:12px;
+                                            color:#666;
+                                            font-weight:normal;
+                                        }
                                     }
                                 }
                             }

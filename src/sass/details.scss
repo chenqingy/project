@@ -145,6 +145,7 @@ $mainColor:#C7012C;
                     border-bottom:1px solid #ccc;
                 }
                 .imgcontent{
+                    height:7000px;
                     img{margin:18px auto;}
                 }
                 // 第二个
@@ -341,11 +342,15 @@ $mainColor:#C7012C;
                 font-size:16px;
                 line-height:26px;
                 color:#333333;
-
             }
-            span:last-child{
+            span:nth-child(2){
                 color:#FF0101;
                 padding-left:5px;
+            }
+            p.nameother{
+                padding-top:4px;
+                color:#666;
+                font-size:16px;
             }
         }
         .goodsprice{
@@ -455,5 +460,149 @@ $mainColor:#C7012C;
             }
         }
         
+    }
+}
+
+.TCbox{
+    width:520px;
+    height:434px;
+    display:none;
+    border:5px solid #ddd;
+    position:fixed;
+    background-color:#fff;
+}
+.TCtitle{
+    background: #F9F9F9;
+    border-bottom: solid 1px #F14D58;
+    height: 50px;
+    position: relative;
+    border-right: solid 1px #ccc;
+    h6{
+        height: 49px;
+        border-bottom: solid 1px #E1E1E1;
+        line-height: 50px;
+        color: #333;
+        font-size: 16px;
+        font-weight: bold;
+        padding-left: 15px;
+    }
+    .TCclose{
+        position: absolute;
+        display:block;
+        width: 15px;
+        height: 15px;
+        top: 18px;
+        right: 14px;
+        z-index: 10002;
+        text-align:center;
+        line-height:15px;
+        &:hover{
+            background-color:#f00;
+        }
+    }
+}
+.TCbody{
+    background: #fff;
+    border-top: solid 1px #E7AAAF;
+    border-right: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    .carContent{
+        .carsuccess{
+            position:relative;
+            padding: 20px 0 20px 140px;
+            i,h5{float:left;}
+            p{width:100%;margin-left:5px;}
+            i{
+                display:block;
+                width:49px;
+                height:49px;
+                background:url("../img/fw.fw.png") 0 -410px;
+            }
+            p:nth-of-type(1){
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            span.em{
+                font-size: 16px;
+                font-weight: bold;
+                color: #c7012c;
+                margin: 0 6px;
+            }
+        }
+        .carGoingOn{
+            padding-left: 140px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            a{
+                float:left;
+                width: 100px;
+                height: 40px;
+                line-height: 40px;
+                background: #fafafa;
+                text-align: center;
+                font-size: 14px;
+                font-weight: bold;
+                margin-right: 15px;
+                color:#666;
+                border-radius:5px;
+            }
+            a.btnGocart{
+                width: 122px;
+                overflow: hidden;
+                background: $mainColor;
+                font-size: 18px;
+                margin-right: 12px;
+                color: #fff;
+                font-weight:normal;
+                font-family: "Microsoft YaHei";
+            }
+        }
+    }
+    .TChotlist{
+        margin: 0 6px;
+        border-top: solid 1px #ddd;
+        padding: 4px 10px 4px 20px;
+        color:#666;
+        .hothd{
+            height: 33px;
+                padding: 0 10px 0 0;
+                line-height: 33px;
+                overflow: hidden;
+                font-weight: bold;
+            a{
+                float:right;
+                color:#666;
+            }
+        }
+        .hotcontent{
+            li{
+                float:left;
+                width: 100px;
+                height: 170px;
+                overflow: hidden;
+                margin-right: 15px;
+                p.img{
+                    padding: 0 13px 0 12px;
+                    margin: 0 auto 10px;
+                    overflow: hidden;
+                    img{
+                        width:75px;
+                        height: 75px;
+                    }
+                }
+                p.name{
+                    height: 36px;
+                    overflow: hidden;
+                    margin-bottom: 2px;
+                } 
+                span.em{
+                    font-size: 16px;
+                    color: #c7012c;
+                    font-weight: bold;
+                }
+
+            }
+        }
     }
 }

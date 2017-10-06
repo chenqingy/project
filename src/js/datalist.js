@@ -22,29 +22,73 @@ require(['config'],function(){
             
         // tab标签切换的数据
         var $ul_tabs = $('#tabs');
-        var $datalist2 = $('.datalist2');
-        // console.log($datalist2);
-        $.ajax({
-            url: "../api/goodslist.php", 
-            success: function(res){
-                // console.log(res);
-                console.log($.parseJSON(res));
-                res = $.parseJSON(res);
-                var $ul = $('<ul/>');
-                $ul.addClass('clearfix');
-                var html = res.map(function(item){
-                    console.log(item.imgurl);
-                    return `<li data-guid="${item.id}">
-                        <a href="details.html?id=${item.id}&name=${encodeURI(item.name)}&imgurl=${encodeURI(item.imgurl)}&price=${encodeURI(item.price)}&description=${encodeURI(item.description)}"><img src="${item.imgurl}"></a>
-                        <h4>${item.name}</h4>
-                        <p>${item.description}</p>
-                        <p class="price clearfix">${item.price}</p>
-                    </li>`
-                }).join('');
-                $ul.html(html);
+        function showData($ele,res){
+            // console.log($.parseJSON(res));
+            res = $.parseJSON(res);
+            var $ul = $('<ul/>');
+            $ul.addClass('clearfix');
+            var html = res.map(function(item){
+                return `<li data-guid="${item.id}">
+                    <a href="details.html?id=${item.id}" target="_blank"><img src="${item.imgurl}"></a>
+                    <h4><a href="#">${item.name}</a></h4>
+                    <p>${item.description}</p>
+                    <p class="price clearfix"><span>飞虎价：</span>￥${item.price}</p>
+                </li>`
+            }).join('');
+            $ul.html(html);
 
-                $datalist2.html('') 
-                $datalist2.append($ul);                    
+            $ele.html('') 
+            $ele.append($ul);   
+        }
+        // 1F======================================================================
+        var $1F = $('.1F');
+        $.ajax({
+            url: "../api/goodslist.php",
+            data:{
+                type:"'1F'"
+            }, 
+            success:function(res){               
+                showData($1F,res);                       
+            }
+        });
+        var $2F = $('.2F');
+        $.ajax({
+            url: "../api/goodslist.php",
+            data:{
+                type:"'2F'"
+            }, 
+            success:function(res){               
+                showData($2F,res);                       
+            }
+        });
+        var $3F = $('.3F');
+        $.ajax({
+            url: "../api/goodslist.php",
+            data:{
+                type:"'3F'"
+            }, 
+            success:function(res){               
+                showData($3F,res);                       
+            }
+        });
+        var $4F = $('.4F');
+        $.ajax({
+            url: "../api/goodslist.php",
+            data:{
+                type:"'4F'"
+            }, 
+            success:function(res){               
+                showData($4F,res);                       
+            }
+        });
+        var $5F = $('.5F');
+        $.ajax({
+            url: "../api/goodslist.php",
+            data:{
+                type:"'5F'"
+            }, 
+            success:function(res){               
+                showData($5F,res);                       
             }
         });
         

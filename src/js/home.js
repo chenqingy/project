@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-25 10:53:14
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-29 14:53:08
+* @Last Modified time: 2017-10-01 11:17:15
 */
 require(['config'],function(){
     require(['jquery','common','xcarousel','head_foot'],function($,common,xcarousel,head_foot){
@@ -71,12 +71,14 @@ require(['config'],function(){
         var $seckill = $('#seckill');        
         $.ajax({
             url: "../api/indexdata.php", 
+            data:{
+                type:"'today'"
+            },
             success: function(res){
-                // console.log($.parseJSON(res));
                 var res = $.parseJSON(res);
                 var $ul=$('<ul/>');
                 $ul.addClass('clearfix');
-                var html = res.map(function(item){
+                var $html = $.map(res,function(item){
                     return `<li>
                         <a href="#"><img src="${item.imgurl}"></a>
                         <p class="title">${item.name}</p>
@@ -86,15 +88,204 @@ require(['config'],function(){
                         </p>
                     </li>`
                 }).join('');
-                $ul.html(html);
+                $ul.html($html);
                 $seckill.html('') 
-                $seckill.append($ul);
+                $seckill.append($ul);               
             }
         });
-        
+        function showLeftData($ele,res){
+            var res = $.parseJSON(res);
+            // console.log(res);
+            var $html =$.map(res,function(item){
+                // console.log(item);
+                return `<a href="#"><img src="${item.imgurl}" /></a>`;
+            }).join('');
+            $ele.html($html); 
+        };
+        // 请求左边的数据
+        var $1Fleft = $('.1Fleft');
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'1Fleft'"
+            },
+            success:function(res){
+               showLeftData($1Fleft,res);        
+            }
+        });
+        // 请求左边的数据
+        var $2Fleft = $('.2Fleft');
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'2Fleft'"
+            },
+            success:function(res){
+                showLeftData($2Fleft,res);        
+            }
+        });
+        // 请求左边的数据
+        var $3Fleft = $('.3Fleft');
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'3Fleft'"
+            },
+            success:function(res){
+                showLeftData($3Fleft,res);       
+            }
+        });
+        // 请求左边的数据
+        var $4Fleft = $('.4Fleft');
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'4Fleft'"
+            },
+            success:function(res){
+                showLeftData($4Fleft,res);       
+            }
+        });
+        // 请求左边的数据
+        var $5Fleft = $('.5Fleft');
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'5Fleft'"
+            },
+            success:function(res){
+                showLeftData($5Fleft,res);       
+            }
+        });
+        // 请求左边的数据
+        var $6Fleft = $('.6Fleft');
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'6Fleft'"
+            },
+            success:function(res){
+                showLeftData($6Fleft,res);       
+            }
+        });
+        // 请求左边的数据
+        var $7Fleft = $('.7Fleft');
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'7Fleft'"
+            },
+            success:function(res){
+                showLeftData($7Fleft,res);        
+            }
+        });
+        // 请求左边的数据
+        var $8Fleft = $('.8Fleft');
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'8Fleft'"
+            },
+            success:function(res){
+                showLeftData($8Fleft,res);       
+            }
+        });
 
-        
-        
-        
+        function showData($ele,res){
+            var res = $.parseJSON(res);
+            var $ul=$('<ul/>');
+            $ul.addClass('clearfix');
+            var $html = $.map(res,function(item){
+                return `<li>
+                    <a href="#"><img src="${item.imgurl}"></a>
+                    <p class="title">${item.name}</p>
+                    <p class="price">${item.price}</p>
+                </li>`
+            }).join('');
+            $ul.html($html);
+            $ele.html('') 
+            $ele.append($ul); 
+        }
+        // 请求右边的数据  
+        var $1Fright =  $('.1Fright');    
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'1Fright'"
+            },
+            success: function(res){
+                showData($1Fright,res)              
+            }
+        });
+        var $2Fright =  $('.2Fright');    
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'2Fright'"
+            },
+            success: function(res){
+                showData($2Fright,res)              
+            }
+        });
+        var $3Fright =  $('.3Fright');    
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'3Fright'"
+            },
+            success: function(res){
+                showData($3Fright,res)              
+            }
+        });
+        var $4Fright =  $('.4Fright');    
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'4Fright'"
+            },
+            success: function(res){
+                showData($4Fright,res)              
+            }
+        });
+        var $5Fright =  $('.5Fright');    
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'5Fright'"
+            },
+            success: function(res){
+                showData($5Fright,res)              
+            }
+        });
+        var $6Fright =  $('.6Fright');    
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'6Fright'"
+            },
+            success: function(res){
+                showData($6Fright,res)              
+            }
+        });
+        var $7Fright =  $('.7Fright');    
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'7Fright'"
+            },
+            success: function(res){
+                showData($7Fright,res)              
+            }
+        });
+        var $8Fright =  $('.8Fright');    
+        $.ajax({
+            url: "../api/indexdata.php", 
+            data:{
+                type:"'8Fright'"
+            },
+            success: function(res){
+                showData($8Fright,res)              
+            }
+        });
     });
 })

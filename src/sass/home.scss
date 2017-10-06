@@ -312,6 +312,7 @@ $martop:25px;
     }
     .product_class{
         margin-top:$martop;
+        background-color:#fff;
         a:hover img{
             transform:scale(1.1);
         }
@@ -344,7 +345,7 @@ $martop:25px;
             float:left;
             >div{float:left;width:600px;}
             .left{                
-                div{
+                a{
                     float:left;                    
                 }
             }

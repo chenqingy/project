@@ -266,12 +266,12 @@ p.price, #main .container .main_content .main_r .arrage .datalist-left ul li p.p
 }
 
 #main .container .main_content .main_r .arrage .datalist-left ul li h4 a {
-  color: #666666;
+  color: #7D7D7D;
 }
 
 #main .container .main_content .main_r .arrage .datalist-left ul li h4 a:hover {
   text-decoration: underline;
-  color: blue;
+  color: #0066FF;
 }
 
 #main .container .main_content .main_r .arrage .datalist-left ul li p {
@@ -350,13 +350,17 @@ p.price, #main .container .main_content .main_r .arrage .datalist-left ul li p.p
   overflow: hidden;
 }
 
+#main .container .main_content .main_r .product .product_class .datalist2 ul li h4 {
+  color: #7D7D7D;
+}
+
 #main .container .main_content .main_r .product .product_class .datalist2 ul li h4 a {
-  color: #666666;
+  color: #7D7D7D;
 }
 
 #main .container .main_content .main_r .product .product_class .datalist2 ul li h4 a:hover {
   text-decoration: underline;
-  color: blue;
+  color: #0066FF;
 }
 
 #main .container .main_content .main_r .product .product_class .datalist2 ul li p {
@@ -365,6 +369,12 @@ p.price, #main .container .main_content .main_r .arrage .datalist-left ul li p.p
 
 #main .container .main_content .main_r .product .product_class .datalist2 ul li p.price {
   margin-top: 38px;
+}
+
+#main .container .main_content .main_r .product .product_class .datalist2 ul li p.price span {
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
 }
 
 #main .container .main_content .main_r .product div:first-child > ul li:first-child {

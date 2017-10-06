@@ -118,14 +118,17 @@
 
 #main .main_content table tbody .col_quantity {
   width: 160px;
+  text-align: center;
 }
 
 #main .main_content table tbody .col_price {
   width: 140px;
+  text-align: center;
 }
 
 #main .main_content table tbody .col_total {
   width: 140px;
+  text-align: center;
 }
 
 #main .main_content table tbody .col_op {
@@ -154,12 +157,12 @@
   line-height: 21px;
 }
 
-#main .main_content table tbody .col_content .item_content div {
+#main .main_content table tbody .col_content .item_content li {
   float: left;
 }
 
 #main .main_content table tbody .col_content .item_content .col_quantity input {
-  width: 100%;
+  width: 50px;
 }
 
 #main .main_content .mainCarTotal {

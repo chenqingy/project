@@ -3,23 +3,116 @@ require(['config'],function(){
 
         //获取当前链接？号之后的字符串
         var params = location.search;
-        //将字符串解码
-        var params = decodeURI(params);
         // console.log(params);
-        var simplegoods = params.slice(1).split('&');
-        //console.log(simplegoods);
-        var obj = {};
-        simplegoods.forEach(function(item){
-            simplegoods = item.split('=');
-            obj[simplegoods[0]] = simplegoods[1]; 
-        }) 
+        var id = params.substr(4);
 
+        var $bigimg = $('#goods .img');
+        var $goodsname = $('#goods .goodsname');
+        var $goodsprice = $('#goods .price');
+        
+
+
+        // console.log(id);
+        $.ajax({
+            url:"../api/goodslistid.php",
+            type:"get",
+            data:{
+                id:id
+            },
+            success:function(res){
+                var res=$.parseJSON(res);
+                // console.log(res);
+                $.map(res,function(item){
+                    $bigimg.append($('<img/>').attr('src',item.imgurl));
+
+                    $('.itemname')[0].innerHTML=item.name;
+
+                    var $span2html = $('<span/>').html(item.description);
+                    var $span1html = $('<span/>').html(item.name);
+                    var $other = $('<p/>').addClass('nameother').html(item.other);
+                    $goodsname.append($span1html).append($span2html).append($other);
+                    var $h5 = `<h5>
+                        <span>飞虎价：</span>
+                        ${item.price}
+                    </h5>`;
+                    $goodsprice.html($h5);
+
+                    // 商品描述部分
+                    $('.imgcontent').html($('<img/>').attr('src',item.otherbigimg));
+
+
+                    // 点击购物车按钮
+                    var $buycarBtn = $('#buycarBtn');
+                    var $tcBox = $('.TCbox');
+
+                    //进入前先判断是否有cookie
+                    //如果有则获取它的值，把JSON转成对象或数组
+                    var carlist=[];
+                    var cookies = document.cookie;
+                    if(cookies.length>0){
+                        cookies=cookies.split('; ');
+                        cookies.forEach = (function(cookie){
+                            var temp = cookie.split('=');
+                            if(temp[0]==='carlist'){
+                                carlist=JSON.parse(temp[1]);
+                            }
+                        });
+                    }
+
+                    $buycarBtn.on('click',function(e){
+                        e.preventDefault();
+                        // 弹窗的样式
+                        $tcBox.css({
+                            'display':'block',
+                            'top':'50%',
+                            'left':'50%',
+                            'transform':'translate(-50%,-50%)'
+                        });
+                        // 点击弹窗时,增加kookie
+                        console.log(id);
+                        var has=false;
+                        //如果carlist里有已经存在的 则qty++，，
+                        for(var i=0;i<carlist.length;i++){
+                            //数组里每个对象的id若已经存在一致的,不添加对象在数组里
+                            if(carlist[i].id===id){
+                                console.log(carlist[i].id,)
+                                carlist[i].qty++;
+                                has=true;
+                                break;
+                            }
+                        }
+
+                        if(!has){
+                            var goods={
+                                imgurl:item.imgurl,
+                                name:item.name,
+                                price:item.price,
+                                qty:1,
+                                id:id
+                            }
+                            carlist.push(goods);
+                        }
+                        //写入cookie
+                        var date=new Date();
+                        date.setDate(date.getDate()+7);
+                        document.cookie= 'carlist='+JSON.stringify(carlist);
+
+                        $('.carTotal').html(item.price+'元');
+
+                    });
+                    // 点击X关闭购物车弹窗
+                    $('.TCclose').on('click',function(){
+                        $tcBox.css('display','none');
+                    })
+                });
+            }
+        });
+        
         
 
         // 商品左边的内容
         // 定义图片内容
-        var $bigimg = $('#goods .img');
-        $bigimg.append($('<img/>').attr('src',obj.imgurl));
+        
 
         // 小图的ul的父级
         var $smallimg = $('#goods .smallimg');
@@ -39,20 +132,7 @@ require(['config'],function(){
         }).on('click','.btn_next',function(){
             $smallimg.find('ul').animate({left:-276});
         });
-
-        $('.itemname')[0].innerHTML=obj.name;
-        // 商品右边的内容
-        var $goodsname = $('#goods .goodsname');
-        var $span2html = $('<span/>').html(obj.description);
-        var $span1html = $('<span/>').html(obj.name);
-        $goodsname.append($span1html).append($span2html);
-
-        var $goodsprice = $('#goods .price');
-        var $h5 = `<h5>
-            <span>飞虎价：</span>
-            ${obj.price}
-        </h5>`;
-        $goodsprice.html($h5);
+    
 
         // 选择商品颜色
         var $goodstab =$('#goods .goodstab');
@@ -128,6 +208,8 @@ require(['config'],function(){
 
 
         });
+
+        
             
 
 

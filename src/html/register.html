@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/head.css" />
+    <link rel="stylesheet" type="text/css" href="../css/register.css" />
+</head>
+<body>
+    <div class="box">
+        <div id="Head"></div>
+        <div id="main">
+            <div class="container">
+                <div class="logo">
+                    <a href="../index.html"><img src="../img/login_logo.png" alt="" /></a>
+                </div>
+                <div class="login_box">
+                    <div class="title">
+                        <h2>用户注册</h2>
+                    </div>
+                    <div class="boxMain">
+                        <p>您尚未注册：<span>请填写注册信息，带有*号的为必须向</span></p>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><label for="username">*用户名</label><input type="text" id="username"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="password">*密码</label><input type="password" id="password"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="repassword">*确认密码</label><input type="password" id="username"/></td>
+                                </tr>    
+                                <tr>
+                                    <td><label for="email">*邮箱</label><input type="text" id="email"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="referrer">推荐人</label><input type="text" id="referrer"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="actCode">活动代码</label><input type="text" id="actCode"/></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="verCode">*验证码</label><input type="text" id="verCode"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="loginBtn">
+                            <p>
+                                <span>2131</span><a href="#">换一个验证码</a>
+                            </p>
+                            <p>
+                                <input type="checkbox"/>我同意并已阅读<a href="#">飞虎乐购用户协议</a>
+                            </p>
+                            <p>
+                                <a href="#" class="iconfont icon-xiangshui">提交注册</a>
+                            </p>
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Foot1"></div>
+    </div>
+    <script src="../lib/require.js" data-main="../js/register" type="text/javascript"></script> 
+</body>
+</html>
