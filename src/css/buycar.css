@@ -10,13 +10,24 @@
 #search ul li {
   float: left;
   background-color: #C7012C;
-  margin-right: 5px;
-  width: 207px;
+  margin-right: 22px;
+  width: 190px;
   height: 36px;
   line-height: 36px;
   padding-left: 36px;
   color: #fff;
   font-size: 16px;
+  position: relative;
+}
+
+#search ul li i {
+  display: block;
+  position: relative;
+  top: -36px;
+  right: -154px;
+  width: 17px;
+  height: 36px;
+  background: url("../img/fw.fw.png") -35px 0;
 }
 
 #main {
@@ -65,14 +76,7 @@
   width: 100%;
 }
 
-#main .main_content table .ui_quantity {
-  height: 21px;
-  padding-right: 20px;
-  position: relative;
-  width: 50px;
-}
-
-#main .main_content table tbody {
+#main .main_content table tbody, #main .main_content table thead {
   margin: 0;
   padding: 0;
   border: 0;
@@ -82,11 +86,11 @@
   background: transparent;
 }
 
-#main .main_content table tbody tr {
+#main .main_content table tbody tr, #main .main_content table thead tr {
   overflow: hidden;
 }
 
-#main .main_content table tbody tr th {
+#main .main_content table tbody tr th, #main .main_content table thead tr th {
   height: 35px;
   line-height: 35px;
   border-bottom: solid 1px #ddd;
@@ -94,11 +98,11 @@
   font-weight: normal;
 }
 
-#main .main_content table tbody tr th div {
+#main .main_content table tbody tr th div, #main .main_content table thead tr th div {
   float: left;
 }
 
-#main .main_content table tbody .col_num {
+#main .main_content table tbody .col_num, #main .main_content table thead .col_num {
   width: 60px;
   border: solid 1px #ddd;
   border-top: none;
@@ -106,63 +110,80 @@
   text-align: center;
 }
 
-#main .main_content table tbody .col_img {
+#main .main_content table tbody .col_img, #main .main_content table thead .col_img {
   width: 206px;
   overflow: hidden;
   text-align: center;
 }
 
-#main .main_content table tbody .col_name {
+#main .main_content table tbody .col_name, #main .main_content table thead .col_name {
   width: 353px;
 }
 
-#main .main_content table tbody .col_quantity {
+#main .main_content table tbody .col_quantity, #main .main_content table thead .col_quantity {
   width: 160px;
   text-align: center;
 }
 
-#main .main_content table tbody .col_price {
+#main .main_content table tbody .col_price, #main .main_content table thead .col_price {
   width: 140px;
   text-align: center;
 }
 
-#main .main_content table tbody .col_total {
+#main .main_content table tbody .col_total, #main .main_content table thead .col_total {
   width: 140px;
   text-align: center;
 }
 
-#main .main_content table tbody .col_op {
+#main .main_content table tbody .col_op, #main .main_content table thead .col_op {
   float: left;
   width: 60px;
   overflow: hidden;
   text-align: center;
 }
 
-#main .main_content table tbody .col_content {
+#main .main_content table tbody .col_content, #main .main_content table thead .col_content {
   border-bottom: solid 1px #ddd;
   border-right: solid 1px #ddd;
   padding: 12px 0;
 }
 
-#main .main_content table tbody .col_content .col_img {
+#main .main_content table tbody .col_content .col_img, #main .main_content table thead .col_content .col_img {
   padding: 0 15px;
   margin-right: 5px;
   float: left;
 }
 
-#main .main_content table tbody .col_content .item_content {
+#main .main_content table tbody .col_content .item_content, #main .main_content table thead .col_content .item_content {
   float: left;
   width: 866px;
   padding: 6px 0 0;
   line-height: 21px;
 }
 
-#main .main_content table tbody .col_content .item_content li {
+#main .main_content table tbody .col_content .item_content li, #main .main_content table thead .col_content .item_content li {
   float: left;
 }
 
-#main .main_content table tbody .col_content .item_content .col_quantity input {
+#main .main_content table tbody .col_content .item_content .col_quantity input, #main .main_content table thead .col_content .item_content .col_quantity input {
   width: 50px;
+  text-align: center;
+  float: left;
+  height: 20px;
+}
+
+#main .main_content table tbody .col_content .item_content .col_quantity span, #main .main_content table thead .col_content .item_content .col_quantity span {
+  float: left;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid #ccc;
+  background-color: #efefef;
+}
+
+#main .main_content table tbody .col_content .item_content .col_quantity span:first-child, #main .main_content table thead .col_content .item_content .col_quantity span:first-child {
+  margin-left: 28px;
 }
 
 #main .main_content .mainCarTotal {
@@ -239,6 +260,10 @@
   margin-right: 20px;
 }
 
+#main .main_content .main_addItem {
+  margin-top: 30px;
+}
+
 #main .main_content .main_addItem .itemTittle {
   background-color: #F7F7F7;
   border-bottom: 1px solid #ccc;
@@ -297,10 +322,17 @@
   background: url("../img/fw.fw.png") 0 -222px;
 }
 
-#main .main_content .main_addItem .goodsItem ul {
+#main .main_content .main_addItem .goodsItem .goodsContent {
   margin-top: 10px;
   width: 1100px;
   float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+#main .main_content .main_addItem .goodsItem ul {
+  position: absolute;
+  width: 2200px;
 }
 
 #main .main_content .main_addItem .goodsItem ul li {

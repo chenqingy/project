@@ -3,11 +3,133 @@
   background-color: #FAFAFA;
 }
 
+.nav_r {
+  position: relative;
+}
+
+.nav_r .showCart {
+  border: 1px solid #f00;
+  position: absolute;
+  min-height: 50px;
+  width: 194px;
+  top: 31px;
+  left: 0px;
+  background-color: #fff;
+  color: #f00;
+  text-align: center;
+  z-index: 100;
+}
+
+.nav_r .showCart ul {
+  margin-top: 5px;
+}
+
+.nav_r .showCart li {
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav_r .showCart li > p, .nav_r .showCart li h5 {
+  float: left;
+}
+
+.nav_r .showCart img {
+  width: 47px;
+  height: 47px;
+}
+
+.nav_r .showCart h5 {
+  width: 145px;
+}
+
+.nav_r .showCart h5 p {
+  line-height: 16px;
+  height: 16px;
+  overflow: hidden;
+  text-align: left;
+  font-weight: normal;
+}
+
+.nav_r .showCart h5 p.name {
+  color: #333;
+}
+
+.nav_r .showCart h5 p.name:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.nav_r .showCart h5 p.price, .nav_r .showCart h5 #main .container .main_content .main_r .arrage .datalist-left ul li p.price, #main .container .main_content .main_r .arrage .datalist-left ul li .nav_r .showCart h5 p.price, .nav_r .showCart h5 #main .container .main_content .main_r .product .product_class .datalist2 ul li p.price, #main .container .main_content .main_r .product .product_class .datalist2 ul li .nav_r .showCart h5 p.price {
+  padding-left: 0px;
+}
+
+.nav_r .showCart h5 p:last-child {
+  position: absolute;
+  bottom: 5px;
+  right: 8px;
+}
+
+.nav_r .showCart h5 p:last-child span {
+  float: right;
+  color: #ccc;
+}
+
+.nav_r .showCart div .mycart_total {
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.nav_r .showCart div .mycart_total p {
+  float: left;
+  padding-left: 20px;
+  color: #333;
+  line-height: 20px;
+}
+
+.nav_r .showCart div .mycart_total p span {
+  color: #f00;
+}
+
+.nav_r .showCart div .mycar_pay > a {
+  display: block;
+  width: 110px;
+  height: 31px;
+  line-height: 31px;
+  margin: 10px auto;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #c60029;
+  color: #fff;
+}
+
 p.price, #main .container .main_content .main_r .arrage .datalist-left ul li p.price, #main .container .main_content .main_r .product .product_class .datalist2 ul li p.price {
   font-weight: bold;
   color: #C7012C;
   font-size: 14px;
   padding-left: 21px;
+}
+
+div.pbtn {
+  margin-top: 10px;
+  padding-left: 21px;
+}
+
+div.pbtn a {
+  display: inline-block;
+  width: 79px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+div.pbtn a:first-child {
+  width: 66px;
+  margin-right: 5px;
 }
 
 #main {
@@ -202,12 +324,53 @@ p.price, #main .container .main_content .main_r .arrage .datalist-left ul li p.p
   height: 242px;
 }
 
-#main .container .main_content .main_r .advertising .datalist-left p {
+#main .container .main_content .main_r .advertising .datalist-left > p {
   line-height: 36px;
   color: #C7012C;
   font-size: 16px;
   padding-left: 10px;
   background-color: #F5F5F5;
+}
+
+#main .container .main_content .main_r .advertising .datalist-left .choice {
+  position: relative;
+  overflow: hidden;
+}
+
+#main .container .main_content .main_r .advertising .datalist-left .choice img {
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+}
+
+#main .container .main_content .main_r .advertising .datalist-left .choice p {
+  line-height: 20px;
+  padding-left: 10px;
+}
+
+#main .container .main_content .main_r .advertising .datalist-left .choice p a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+#main .container .main_content .main_r .advertising .datalist-left .choice p.price, #main .container .main_content .main_r .advertising .datalist-left .choice .product .product_class .datalist2 ul li p.price, #main .container .main_content .main_r .product .product_class .datalist2 ul li .advertising .datalist-left .choice p.price {
+  position: absolute;
+  bottom: 60px;
+  right: 31px;
+  background-color: #f00;
+  padding-left: 0px;
+  width: 60px;
+  height: 60px;
+  padding-top: 10px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+#main .container .main_content .main_r .advertising .datalist-left .choice p.price span, #main .container .main_content .main_r .advertising .datalist-left .choice .product .product_class .datalist2 ul li p.price span, #main .container .main_content .main_r .product .product_class .datalist2 ul li .advertising .datalist-left .choice p.price span {
+  display: block;
+  text-align: center;
+  font-size: 16px;
 }
 
 #main .container .main_content .main_r .arrage {
@@ -379,4 +542,170 @@ p.price, #main .container .main_content .main_r .arrage .datalist-left ul li p.p
 
 #main .container .main_content .main_r .product div:first-child > ul li:first-child {
   width: 56px;
+}
+
+.TCbox {
+  width: 520px;
+  height: 434px;
+  display: none;
+  border: 5px solid #ddd;
+  position: fixed;
+  background-color: #fff;
+}
+
+.TCtitle {
+  background: #F9F9F9;
+  border-bottom: solid 1px #F14D58;
+  height: 50px;
+  position: relative;
+  border-right: solid 1px #ccc;
+}
+
+.TCtitle h6 {
+  height: 49px;
+  border-bottom: solid 1px #E1E1E1;
+  line-height: 50px;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.TCtitle .TCclose {
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  top: 18px;
+  right: 14px;
+  z-index: 10002;
+  text-align: center;
+  line-height: 15px;
+}
+
+.TCtitle .TCclose:hover {
+  background-color: #f00;
+}
+
+.TCbody {
+  background: #fff;
+  border-top: solid 1px #E7AAAF;
+  border-right: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+}
+
+.TCbody .carContent .carsuccess {
+  position: relative;
+  padding: 20px 0 20px 140px;
+}
+
+.TCbody .carContent .carsuccess i, .TCbody .carContent .carsuccess h5 {
+  float: left;
+}
+
+.TCbody .carContent .carsuccess p {
+  width: 100%;
+  margin-left: 5px;
+}
+
+.TCbody .carContent .carsuccess i {
+  display: block;
+  width: 49px;
+  height: 49px;
+  background: url("../img/fw.fw.png") 0 -410px;
+}
+
+.TCbody .carContent .carsuccess p:nth-of-type(1) {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.TCbody .carContent .carsuccess span.em {
+  font-size: 16px;
+  font-weight: bold;
+  color: #c7012c;
+  margin: 0 6px;
+}
+
+.TCbody .carContent .carGoingOn {
+  padding-left: 140px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.TCbody .carContent .carGoingOn a {
+  float: left;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  background: #fafafa;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 15px;
+  color: #666;
+  border-radius: 5px;
+}
+
+.TCbody .carContent .carGoingOn a.btnGocart {
+  width: 122px;
+  overflow: hidden;
+  background: #c7012c;
+  font-size: 18px;
+  margin-right: 12px;
+  color: #fff;
+  font-weight: normal;
+  font-family: "Microsoft YaHei";
+}
+
+.TCbody .TChotlist {
+  margin: 0 6px;
+  border-top: solid 1px #ddd;
+  padding: 4px 10px 4px 20px;
+  color: #666;
+}
+
+.TCbody .TChotlist .hothd {
+  height: 33px;
+  padding: 0 10px 0 0;
+  line-height: 33px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.TCbody .TChotlist .hothd a {
+  float: right;
+  color: #666;
+}
+
+.TCbody .TChotlist .hotcontent li {
+  float: left;
+  width: 100px;
+  height: 170px;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.TCbody .TChotlist .hotcontent li p.img {
+  padding: 0 13px 0 12px;
+  margin: 0 auto 10px;
+  overflow: hidden;
+}
+
+.TCbody .TChotlist .hotcontent li p.img img {
+  width: 75px;
+  height: 75px;
+}
+
+.TCbody .TChotlist .hotcontent li p.name {
+  height: 36px;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+.TCbody .TChotlist .hotcontent li span.em {
+  font-size: 16px;
+  color: #c7012c;
+  font-weight: bold;
 }

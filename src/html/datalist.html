@@ -367,8 +367,11 @@
                     <li><a href="#"><span>飞虎团购</span></a></li>
                 </ul>
                 <div class="nav_r">
-                    <a href="buycar.html"><i class="iconfont icon-gouwuchekong"></i>购物车(0)<i class="xia"></i></a>
-                    <a href="#">去结算<i></i></a>
+                    <a href="buycar.html" target="_blank" id="showCart"><i class="iconfont icon-gouwuchekong"></i>购物车(0)<i class="xia"></i></a>
+                    <div class="showCart">
+                        <!-- <ul></ul> -->
+                    </div>
+                    <a href="buycar.html" target="_blank">去结算<i></i></a>
                 </div>
             </div>
         </div>
@@ -624,7 +627,9 @@
                             <div class="mainAd"><img src="../img/advertisng.png" alt="" /></div>
                             <div class="datalist-left">
                                 <p>每日精选</p>
-
+                                <div class="choice">
+                                    
+                                </div>
                             </div>
                         </div>
                         <div class="arrage">
@@ -826,6 +831,57 @@
             </div>                
         </div>
         <div id="Foot">           
+        </div>
+        <div class="TCbox">
+            <div class="TCtitle">
+                <h6>购物提示</h6>
+                <span class="TCclose">&times;</span>
+            </div>
+            <div class="TCbody">
+                <div class="carContent">
+                    <div class="carsuccess clearfix">
+                        <i></i>
+                        <h5>
+                            <p>该商品以放入购物车</p>
+                            <p class="des">购物车共<span class="qty em">1</span>件商品 合计：<span class="carTotal em"></span></p>
+                        </h5>                            
+                    </div>
+                    <div class="carGoingOn clearfix">
+                        <a href="#" class="btnContinues">继续购物</a>
+                        <a href="buycar.html" class="btnGocart">去结算</a>
+                    </div>
+                </div>
+                <div class="TChotlist">
+                    <div class="hothd clearfix">
+                        <span>飞虎精选</span>
+                        <a href="#">更多您可能喜欢的商品</a>
+                    </div>
+                    <div class="hotcontent">
+                        <ul class="clearfix">
+                            <li>
+                                <p class="img"><a href="#"><img src="../img/phone1.png" alt="" /></a></p>
+                                <p class="name">做个“懒人”，享受生活</p>
+                                <span class="em">￥1299</span>
+                            </li>
+                            <li>
+                                <p class="img"><a href="#"><img src="../img/phone2.png" alt="" /></a></p>
+                                <p class="name">做个“懒人”，享受生活</p>
+                                <span class="em">￥1299</span>
+                            </li>
+                            <li>
+                                <p class="img"><a href="#"><img src="../img/phone3.png" alt="" /></a></p>
+                                <p class="name">做个“懒人”，享受生活</p>
+                                <span class="em">￥1299</span>
+                            </li>
+                            <li>
+                                <p class="img"><a href="#"><img src="../img/phone4.png" alt="" /></a></p>
+                                <p class="name">做个“懒人”，享受生活</p>
+                                <span class="em">￥1299</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="../lib/require.js" data-main="../js/datalist"></script>

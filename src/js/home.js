@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-25 10:53:14
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-10-01 11:17:15
+* @Last Modified time: 2017-10-07 16:23:10
 */
 require(['config'],function(){
     require(['jquery','common','xcarousel','head_foot'],function($,common,xcarousel,head_foot){
@@ -42,7 +42,7 @@ require(['config'],function(){
         
         // 秒杀倒计时
         var h5 = document.querySelector('.today_l h5');
-        var end = '2017/09/30 16:26:00';
+        var end = '2017/10/10 16:26:00';
         //获取结束时间距离1970年的毫秒数es5方法
         var endTime=Date.parse(end);
         Time();
@@ -98,7 +98,7 @@ require(['config'],function(){
             // console.log(res);
             var $html =$.map(res,function(item){
                 // console.log(item);
-                return `<a href="#"><img src="${item.imgurl}" /></a>`;
+                return `<a href="datalist.html"><img src="${item.imgurl}" /></a>`;
             }).join('');
             $ele.html($html); 
         };
@@ -197,7 +197,7 @@ require(['config'],function(){
             $ul.addClass('clearfix');
             var $html = $.map(res,function(item){
                 return `<li>
-                    <a href="#"><img src="${item.imgurl}"></a>
+                    <a href="datalist.html"><img src="${item.imgurl}"></a>
                     <p class="title">${item.name}</p>
                     <p class="price">${item.price}</p>
                 </li>`

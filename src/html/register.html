@@ -25,36 +25,43 @@
                             <tbody>
                                 <tr>
                                     <td><label for="username">*用户名</label><input type="text" id="username"/></td>
+                                    <td class="text_tips">4-20位字符，可由数字、英文组成</td>
                                 </tr>
                                 <tr>
                                     <td><label for="password">*密码</label><input type="password" id="password"/></td>
+                                    <td class="pass_tips">6-16位，可由数字、英文特殊字符组成</td>
                                 </tr>
                                 <tr>
-                                    <td><label for="repassword">*确认密码</label><input type="password" id="username"/></td>
+                                    <td><label for="repassword">*确认密码</label><input type="password" id="repassword"/></td>
+                                    <td class="repass_tips">请再次输入密码</td>
                                 </tr>    
                                 <tr>
                                     <td><label for="email">*邮箱</label><input type="text" id="email"/></td>
+                                    <td class="email_tips">请输入邮箱，用来找回密码、接收订单通知等</td>
                                 </tr>
                                 <tr>
                                     <td><label for="referrer">推荐人</label><input type="text" id="referrer"/></td>
+                                    <td class="ref_tips"><!-- 推荐人用户名，区分大小写 --></td>
                                 </tr>
                                 <tr>
                                     <td><label for="actCode">活动代码</label><input type="text" id="actCode"/></td>
+                                    <td class="act_tips"><!-- 请输入活动代码 --></td>
                                 </tr>
                                 <tr>
                                     <td><label for="verCode">*验证码</label><input type="text" id="verCode"/></td>
+                                    <td class="ver_tips">请输入验证码</td>
                                 </tr>
                             </tbody>
                         </table>
                         <div class="loginBtn">
                             <p>
-                                <span>2131</span><a href="#">换一个验证码</a>
+                                <span class="showCode">2131</span><a href="#" class="code">换一个验证码</a>
                             </p>
                             <p>
                                 <input type="checkbox"/>我同意并已阅读<a href="#">飞虎乐购用户协议</a>
                             </p>
                             <p>
-                                <a href="#" class="iconfont icon-xiangshui">提交注册</a>
+                                <a href="#" class="iconfont icon-xiangshui" id="reg_btn">提交注册</a>
                             </p>
                         </div>
                             
@@ -64,6 +71,6 @@
         </div>
         <div id="Foot1"></div>
     </div>
-    <script src="../lib/require.js" data-main="../js/register" type="text/javascript"></script> 
+    <script src="../lib/require.js" data-main="../js/register"></script> 
 </body>
 </html>

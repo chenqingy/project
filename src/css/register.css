@@ -54,9 +54,14 @@
   line-height: 32px;
 }
 
-#main .container .login_box .boxMain table tr td {
+#main .container .login_box .boxMain table tr td:first-child {
   text-align: right;
   padding-left: 25px;
+}
+
+#main .container .login_box .boxMain table tr td:last-child {
+  color: #f00;
+  display: none;
 }
 
 #main .container .login_box .boxMain table tr label {

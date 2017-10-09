@@ -41,7 +41,11 @@
                         height:32px;
                         line-height:32px;
                         
-                        td{text-align:right;padding-left:25px;}
+                        td:first-child{text-align:right;padding-left:25px;}
+                        td:last-child{
+                            color:#f00;
+                            display:none;
+                        }
                         label{
                             display:inline-block;
                             margin-right:12px;

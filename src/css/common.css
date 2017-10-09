@@ -204,7 +204,7 @@
   float: right;
 }
 
-#nav .nav_r a {
+#nav .nav_r > a {
   display: block;
   text-align: center;
   line-height: 24px;
@@ -214,18 +214,18 @@
   position: relative;
 }
 
-#nav .nav_r a:first-child {
+#nav .nav_r > a:first-child {
   width: 122px;
   color: #333333;
   background-color: #fff;
   border-radius: 3px 0 0 3px;
 }
 
-#nav .nav_r a:first-child i.iconfont {
+#nav .nav_r > a:first-child i.iconfont {
   padding: 0 2px;
 }
 
-#nav .nav_r a:first-child i.xia {
+#nav .nav_r > a:first-child i.xia {
   display: block;
   width: 8px;
   height: 4px;
@@ -235,14 +235,14 @@
   background: url("../img/fw.fw.png");
 }
 
-#nav .nav_r a:last-child {
+#nav .nav_r > a:last-child {
   width: 70px;
   color: #000;
   background-color: #FCBE11;
   border-radius: 0 3px 3px 0;
 }
 
-#nav .nav_r a:last-child i {
+#nav .nav_r > a:last-child i {
   display: block;
   width: 5px;
   height: 8px;

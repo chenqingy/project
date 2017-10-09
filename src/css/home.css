@@ -189,10 +189,12 @@
 }
 
 #banner .banner_r {
+  position: absolute;
   float: left;
   width: 227px;
   height: 480px;
   top: 0px;
+  right: 111px;
 }
 
 #banner .banner_r p {

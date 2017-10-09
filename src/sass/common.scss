@@ -166,7 +166,7 @@ $navHeight:40px;
         width:210px;
         height:$navHeight;//40
         float:right;
-        a{
+        >a{
             display:block;
             text-align:center;
             line-height:24px;
@@ -175,7 +175,7 @@ $navHeight:40px;
             float:left;
             position:relative;
         }
-        a:first-child{
+        >a:first-child{
             width:122px;
             color:#333333;
             background-color:#fff;
@@ -193,7 +193,7 @@ $navHeight:40px;
                 background:url("../img/fw.fw.png");
             }
         }
-        a:last-child{
+        >a:last-child{
             width:70px;
             color:$mainFontColor;
             background-color:#FCBE11;
@@ -209,4 +209,5 @@ $navHeight:40px;
             }
         }
     }
+    
 }

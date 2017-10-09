@@ -40,25 +40,28 @@ require(['config'],function(){
                     // 商品描述部分
                     $('.imgcontent').html($('<img/>').attr('src',item.otherbigimg));
 
-
-                    // 点击购物车按钮
-                    var $buycarBtn = $('#buycarBtn');
-                    var $tcBox = $('.TCbox');
-
                     //进入前先判断是否有cookie
                     //如果有则获取它的值，把JSON转成对象或数组
                     var carlist=[];
                     var cookies = document.cookie;
                     if(cookies.length>0){
-                        cookies=cookies.split('; ');
+                        cookies=cookies.split(';');
+                        console.log(cookies);
                         cookies.forEach = (function(cookie){
+                            // console.log(cookie);
                             var temp = cookie.split('=');
+                            // console.log(temp);
                             if(temp[0]==='carlist'){
                                 carlist=JSON.parse(temp[1]);
                             }
                         });
                     }
-
+                    console.log(carlist);
+                    // console.log(cookies);
+                    // 点击购物车按钮
+                    var $buycarBtn = $('#buycarBtn');
+                    var $tcBox = $('.TCbox');
+                    
                     $buycarBtn.on('click',function(e){
                         e.preventDefault();
                         // 弹窗的样式
@@ -69,19 +72,18 @@ require(['config'],function(){
                             'transform':'translate(-50%,-50%)'
                         });
                         // 点击弹窗时,增加kookie
-                        console.log(id);
+                        // console.log(id);
                         var has=false;
                         //如果carlist里有已经存在的 则qty++，，
                         for(var i=0;i<carlist.length;i++){
                             //数组里每个对象的id若已经存在一致的,不添加对象在数组里
                             if(carlist[i].id===id){
-                                console.log(carlist[i].id,)
+                                // console.log(carlist[i].id,)
                                 carlist[i].qty++;
                                 has=true;
                                 break;
                             }
                         }
-
                         if(!has){
                             var goods={
                                 imgurl:item.imgurl,
@@ -95,7 +97,7 @@ require(['config'],function(){
                         //写入cookie
                         var date=new Date();
                         date.setDate(date.getDate()+7);
-                        document.cookie= 'carlist='+JSON.stringify(carlist);
+                        document.cookie= 'carlist='+JSON.stringify(carlist)+';expires='+date.toUTCString();
 
                         $('.carTotal').html(item.price+'元');
 

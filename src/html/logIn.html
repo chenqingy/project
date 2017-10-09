@@ -17,7 +17,7 @@
                 </div>
                 <div class="login_box">
                     <div class="title">
-                        <h2>用户登录</h2>
+                        <h2>用户登录<span class="error"></span></h2>                        
                     </div>
                     <div class="boxMain">
                         <div class="tips">
@@ -32,7 +32,7 @@
                                     <td><label for="username">用户名</label><input type="text" id="username"/></td>
                                 </tr>
                                 <tr>
-                                    <td><label for="password">密 码：</label><input type="text" id="password"/></td>
+                                    <td><label for="password">密 码：</label><input type="password" id="password"/></td>
                                 </tr>
                                 <tr>
                                     <td><a href="#">忘记密码？</a></td>
@@ -58,7 +58,7 @@
                             </ul>
                         </div>
                         <div class="main_login">
-                            <a href="#">立即登录</a>
+                            <a href="#" id="LogIm">立即登录</a>
                             <a href="register.html">免费注册</a>
                         </div>
                     </div>
@@ -67,6 +67,6 @@
         </div>
         <div id="Foot1"></div>
     </div>
-    <script src="../lib/require" data-main="../js/logIn" type="text/javascript"></script>
+    <script src="../lib/require.js" data-main="../js/logIn" type="text/javascript"></script>
 </body>
 </html>

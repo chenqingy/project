@@ -3,7 +3,9 @@
     
     $type = isset($_GET['type']) ? $_GET['type'] : '';
 
-    $sql = 'select * from goodslist where type='.$type;
+    // $id = isset($_GET['id']) ? $_GET['id'] : '';
+
+    $sql = 'select * from goodslist where type='.$type ;
 
 
     // 获取查询结果

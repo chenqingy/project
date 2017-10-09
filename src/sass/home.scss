@@ -165,11 +165,12 @@ $bannerHeight:480px;
         }
     }
     .banner_r{
-        // position:absolute;
+        position:absolute;
         float:left;
         width:227px;
         height:$bannerHeight;
         top:0px;
+        right:111px;
         p{
             background-color:#fff;
             line-height:40px;
